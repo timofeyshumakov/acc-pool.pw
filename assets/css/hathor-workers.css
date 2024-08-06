@@ -1,0 +1,67 @@
+.column:nth-child(2) .column__title {
+    word-break: break-all;
+    text-wrap: wrap;
+    font-size: 2rem;
+}
+
+.column:nth-child(3), .column:nth-child(1) {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.column:nth-child(3) {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.column-center {
+    max-width: 39em;
+    justify-self: center;
+}
+
+.column__title {
+    width: 100%;
+}
+
+.table__table-main {
+    padding-bottom: 1.5rem;
+}
+
+.table__table-main td, .table__table-main th {
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.table__total {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    opacity: 0.9;
+    color: #415FFF;
+    margin-top: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+table th, table td {
+    min-width: 8.95rem;
+    max-width: 8.95rem;
+}
+
+.table__table-main td:first-child, .table__table-main th:first-child {
+    min-width: 10.8rem;
+    max-width: 10.8rem;
+    padding-left: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.table__table-main th:last-child, .table__table-main td:last-child {
+    min-width: 10.2rem;
+    max-width: 10.2rem;
+}

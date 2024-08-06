@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>landing</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg">
+          <picture><source media="(max-width: 767px)" srcset="assets/img/landing-tablet-bg.svg"><img class="bg__img" src="assets/img/landing-bg.svg"></picture>
+        </div>
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__container container">
+            <div class="info__header">
+              <h1 class="info__title title">Delving <span class="title-decor">✳</span> into <p>the World</p> of Crypto Mining</h1>
+              <div class="info__txt txt">Welcome to Acc-pool home page. To start mining check getting started page.</div>
+            </div>
+            <div class="info__decors">
+              <div class="info__decor-block">
+                <div class="info__decor decor">
+                  <div class="decor__title">Lorem ipsum dolor sit amet</div>
+                  <div class="decor__subtitle">Lorem ipsum dolor</div>
+                </div><img class="info__decor-dot" src="assets/img/decor-dot.svg">
+              </div>
+              <div class="info__decor-block">
+                <div class="info__decor decor">
+                  <div class="decor__title">Lorem ipsum dolor sit amet</div>
+                  <div class="decor__subtitle">Lorem ipsum dolor</div>
+                </div><img class="info__decor-dot" src="assets/img/decor-dot.svg">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__pools pools">
+          <div class="pools__container container">
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/hathor.svg" alt="blog img" title="blog img"><span class="info-card__txt">hathor pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Block</div>
+                  <div class="info-card__value">73</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners</div>
+                  <div class="info-card__value">281</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Pool Luck</div>
+                  <div class="info-card__value">99.98%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="info-card__txt">kaspa pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="info-card__txt">kaspa pool <span class="solo">Solo</span></span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/nexa.svg" alt="blog img" title="blog img"><span class="info-card__txt">nexa pool <span class="solo">Solo</span></span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/warthog.svg" alt="blog img" title="blog img"><span class="info-card__txt">warthog pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/warthog.svg" alt="blog img" title="blog img"><span class="info-card__txt">warthog pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/hathor.svg" alt="blog img" title="blog img"><span class="info-card__txt">hathor pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Block</div>
+                  <div class="info-card__value">73</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners</div>
+                  <div class="info-card__value">281</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Pool Luck</div>
+                  <div class="info-card__value">99.98%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="info-card__txt">kaspa pool</span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pools__poolsСard info-card">
+              <div class="info-card__header"><a class="info-card__pool-logo"><img class="info-card__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="info-card__txt">kaspa pool <span class="solo">Solo</span></span></a>
+                <div class="info-card__hashrate">675.12 Gh/s</div>
+              </div>
+              <div class="info-card__content">
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Miners online</div>
+                  <div class="info-card__value">5526</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Fortune</div>
+                  <div class="info-card__value">100%</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Min payout</div>
+                  <div class="info-card__value">100 KAS</div>
+                </div>
+                <div class="info-card__content-row">
+                  <div class="info-card__item">Status</div>
+                  <div class="info-card__value active"><img class="info-card__status-img" src="assets/img/icons/ok.svg"><span>Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__advantages advantages">
+          <div class="advantages__container container">
+            <div class="advantages__header">
+              <h2 class="advantages__title title">Well-established <p>infrastructure</p></h2>
+                    <form action="#"> 
+                      <button class="advantages__button" target="undefined">Get started</button>
+                    </form>
+            </div>
+            <div class="advantages__advantagesСards">
+              <div class="advantages__advantagesСard advantagesСard"><img class="advantagesСard__img" src="assets/img/advantages/1.jpg">
+                <div class="advantagesСard__title">Data center in Europe, USA, Asia</div>
+                <div class="advantagesСard__txt">A wide range of digital asset management services to meet a variety of trading needs.</div>
+              </div>
+              <div class="advantages__advantagesСard advantagesСard"><img class="advantagesСard__img" src="assets/img/advantages/2.jpg">
+                <div class="advantagesСard__title">Fast support</div>
+                <div class="advantagesСard__txt">A wide range of digital asset management services to meet a variety of trading needs.</div>
+              </div>
+              <div class="advantages__advantagesСard advantagesСard"><img class="advantagesСard__img" src="assets/img/advantages/3.jpg">
+                <div class="advantagesСard__title">Email and Telegram notifications</div>
+                <div class="advantagesСard__txt">A wide range of digital asset management services to meet a variety of trading needs.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__blog blog">
+          <div class="blog__container container">
+            <div class="blog__header">
+              <h2 class="blog__title title">Blog</h2>
+              <div class="blog__news-counter news-counter">
+                <div class="news-counter__item">01</div>
+                <div class="news-counter__line"></div>
+                <div class="news-counter__item">06</div>
+              </div>
+            </div>
+            <div class="blog__blogCards-container">
+              <div class="blog__blogCards"><a class="blog__blogCard blogCard" href="#">
+                  <div class="blogCard__title">We added Bitcoin Cash (BCH) on 2Miners. Pool and Solo. SHA-256 mining algorithm, the same as Bitcoin. Payouts in BCH or BTC.</div>
+                  <div class="blogCard__txt">
+                    <div class="blogCard__date">20 Mar 2024</div>
+                    <div class="blogCard__dot dot"></div>
+                    <div class="blogCard__type">article</div>
+                  </div></a><a class="blog__blogCard blogCard" href="#">
+                  <div class="blogCard__title">We added Bitcoin Cash (BCH) on 2Miners. Pool and Solo. SHA-256 mining algorithm, the same as Bitcoin. Payouts in BCH or BTC.</div>
+                  <div class="blogCard__txt">
+                    <div class="blogCard__date">20 Mar 2024</div>
+                    <div class="blogCard__dot dot"></div>
+                    <div class="blogCard__type">article</div>
+                  </div></a><a class="blog__blogCard blogCard" href="#">
+                  <div class="blogCard__title">We added Bitcoin Cash (BCH) on 2Miners. Pool and Solo. SHA-256 mining algorithm, the same as Bitcoin. Payouts in BCH or BTC.</div>
+                  <div class="blogCard__txt">
+                    <div class="blogCard__date">20 Mar 2024</div>
+                    <div class="blogCard__dot dot"></div>
+                    <div class="blogCard__type">article</div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__support support">
+          <div class="support__container container">
+            <h2 class="support__title title">technical support</h2>
+            <div class="support__socials"><a class="support__social social" href="#" target="_blank"><img class="social__logo" src="assets/img/socials/telegram.svg">
+                <div class="social__info">
+                  <div class="social__content">
+                    <div class="social__title">Telegram Chat</div>
+                    <div class="social__txt">@accpoolpw_chat_official</div>
+                  </div><img class="social__arrow arrow" src="assets/img/icons/arrow-black.svg">
+                </div></a><a class="support__social social" href="#" target="_blank"><img class="social__logo" src="assets/img/socials/telegram.svg">
+                <div class="social__info">
+                  <div class="social__content">
+                    <div class="social__title">Telegram Info</div>
+                    <div class="social__txt">@accpoolpw_official</div>
+                  </div><img class="social__arrow arrow" src="assets/img/icons/arrow-black.svg">
+                </div></a><a class="support__social social" href="#" target="_blank"><img class="social__logo" src="assets/img/socials/discord.svg">
+                <div class="social__info">
+                  <div class="social__content">
+                    <div class="social__title">Discord Chat</div>
+                    <div class="social__txt">@accpoolpw</div>
+                  </div><img class="social__arrow arrow" src="assets/img/icons/arrow-black.svg">
+                </div></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

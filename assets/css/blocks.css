@@ -1,0 +1,158 @@
+.column-center {
+    max-width: unset;
+}
+
+.table__table-main tbody {
+    width: 100%;
+    min-width: 52.7rem;
+}
+
+.table__header {
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.table__tr th {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+
+.table__table-main .table-main__cell:nth-child(1) {
+    width: 6rem;
+    min-width: 6rem;
+}
+
+.difficulty {
+    width: 20rem;
+    min-width: 20rem;
+}
+
+table {
+    min-width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.table__table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+td.confirmations, th.confirmations {
+    min-width: 9rem;
+    width: 9rem;
+}
+
+.table-main__cell.time {
+    width: 11.5rem;
+    min-width: 11.5rem;
+    border-left: none;
+}
+
+.table-main__cell.hathor-difficulty {
+    width: 5rem;
+    min-width: 5rem;
+}
+
+.table-main__cell.nexa-luck {
+    width: 11rem;
+    min-width: 11rem;
+}
+
+.table-main__cell.difficulty-value {
+    width: 6.5rem;
+    min-width: 6.5rem;
+    overflow: visible;
+}
+
+.table-main__cell.luck {
+    width: 7.5rem;
+    min-width: 7.5rem;
+}
+
+.column-center .column__title {
+    font-size: 2rem;
+}
+
+.grow {
+    min-width: 11rem;
+}
+
+tbody .grow, thead .grow {
+    min-width: 16rem;
+    width: 16rem;
+}
+
+select.table__option {
+    background-position: right 0 top 50%, 0 0;
+    padding-right: 1.2rem;
+    font-size: 1rem;
+}
+
+.table__option-txt {
+    opacity: 0.2;
+    width: unset;
+}
+
+.table-main__cell.luck {
+    width: 6rem;
+    min-width: 6rem;
+}
+
+.light-theme .table__options {
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table__options {
+    padding-bottom: 0.45rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.options__radio {
+    display: none;
+}
+
+.options__input {
+    cursor: pointer;
+    position: relative;
+}
+
+.active-input::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(29%, #415FFF), to(#00FFD1));
+    background-image: linear-gradient(to right, #415FFF 29%, #00FFD1 100%);
+}
+
+.table__copy {
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 767px) {
+    .info__container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hathor-difficulty {
+        width: 11.5rem;
+        min-width: 11.5rem;
+    }
+
+    th.confirmations {
+        margin-left: 1.5rem;
+    }
+}

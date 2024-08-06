@@ -1,0 +1,32 @@
+.light-theme .info-card {
+    background: #415FFF;
+}
+
+.light-theme .info-card__content-row:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table__tr th, .table__tr td {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 10rem;
+}
+
+.table__ellipse {
+    background: unset;
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.column:nth-child(2) .column__title {
+    font-size: 2rem;
+}
+
+.earnings-table {
+    margin-bottom: 4rem;
+}
+
+.earnings-table {
+    margin-bottom: 4.5rem;
+}

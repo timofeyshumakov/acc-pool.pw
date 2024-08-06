@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>Hathor pool Miners Transactions Credit</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hathor-transactions.css">
+    <link rel="stylesheet" href="assets/css/hathor-miners-pages.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+          <nav class="header__mining-nav mining-nav"><a class="mining-nav__pool-logo pool-logo"><img class="mining-nav__img" src="assets/img/pools/hathor.svg" alt="blog img" title="blog img"><span class="mining-nav__txt">hathor pool</span></a>
+            <ul class="mining-nav__links">
+              <li class="mining-nav__item acitve-page"><a class="mining-nav__link" href="hathor-pool-miners.html"><img class="mining-nav__link-img" src="assets/img/header/nav/miners.svg" alt="Miners" title="Miners"><span class="mining-nav__link-txt">Miners</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-blocks.html"><img class="mining-nav__link-img" src="assets/img/header/nav/blocks.svg" alt="Blocks" title="Blocks"><span class="mining-nav__link-txt">Blocks</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/stats.svg" alt="Pool statistics" title="Pool statistics"><span class="mining-nav__link-txt">Pool statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-network-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/network.svg" alt="Network statistics" title="Network statistics"><span class="mining-nav__link-txt">Network statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-how-to-start-mining.html"><img class="mining-nav__link-img" src="assets/img/header/nav/start.svg" alt="Getting started" title="Getting started"><span class="mining-nav__link-txt">Getting started</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__bg-container"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse">
+          </div>
+          <div class="info__container container">
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">0.00774099</div>
+                          <div class="column__txt">Balance in BTC</div>
+                        </div><span class="column__line"></span>
+                      </div>
+                      <div class="info__column column-center column">
+                        <div class="column__title index-title">Dollar</div>
+                      </div>
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">0.00000000</div>
+                          <div class="column__txt">Paid in BTC</div>
+                        </div><span class="column__line"></span>
+                      </div>
+          </div>
+        </section>
+        <section class="main__hathor-cards hathor-cards">
+          <div class="hathor-cards__container container info-cards">
+            <div class=" info-cards__info-card info-card">
+              <div class=" info-card__header">
+                <h3 class=" info-card__title">Unconfirmed</h3>
+              </div>
+              <div class=" info-card__content">
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">HTR</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">DGB</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BSV</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BCH</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+              </div>
+            </div>
+            <div class=" info-card____info-card info-card">
+              <div class=" info-card__header">
+                <h3 class=" info-card__title">Balance</h3>
+              </div>
+              <div class=" info-card__content">
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">HTR</div>
+                  <div class=" info-card__value">3005.83</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">DGB</div>
+                  <div class=" info-card__value">453526.94928819</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BSV</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BCH</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+              </div>
+            </div>
+            <div class=" info-card____info-card info-card">
+              <div class=" info-card__header">
+                <h3 class=" info-card__title">Paid</h3>
+              </div>
+              <div class=" info-card__content">
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">HTR</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">DGB</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BSV</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+                <div class=" info-card__content-row">
+                  <div class=" info-card__item">BCH</div>
+                  <div class=" info-card__value">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__table table">
+          <div class="table__container container">
+            <div class="table__header">
+                        <nav class="subpages-nav">
+                          <ul class="subpages-nav__list">
+                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><a class="subpages-nav__link" href="hathor-pool-miners-workers.html">Workers</a>
+                            </li>
+                            <li class="subpages-nav__item active-subpage"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><a class="subpages-nav__link" href="hathor-pool-miners-transactions-credit.html">Transactions</a>
+                            </li>
+                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-earnings.html">Earnings</a>
+                            </li>
+                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/hashrate.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-hashrate&amp;shares.html">Hashrate &amp; Shares</a>
+                            </li>
+                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/settings.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-settings.html">Settings</a>
+                            </li>
+                          </ul>
+                        </nav>
+            </div>
+            <div class="table__header">
+              <h2 class="table__title">transactions</h2>
+              <select class="table__option" id="subpagesSelect">
+                <option class="table__option-txt" value="Credit">Credit</option>
+                <option class="table__option-txt" value="Debit">Debit</option>
+              </select>
+            </div>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Height</th>
+                  <th>Chain</th>
+                  <th>Amount</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>19233302</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>16:14:10 07.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19226505</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:42:33 06.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>4451634</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:47:32 05.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19217049</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>20:21:15 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19214851</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:17:23 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203938</td>
+                  <td><img class="table__img" src="assets/img/chains/h.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17540340"><span class="table__txt">+347.17540340</span></td>
+                  <td>13:57:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203815</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>13:34:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:36:12 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201622</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>04:25:58 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201519</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:59:27 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201210</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:47:39 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19199425</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>19:23:33 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19198466</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17644398"><span class="table__txt">+347.17644398</span></td>
+                  <td>15:09:11 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19197504</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>11:13:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19196362</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>06:25:41 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19195385</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:22:58 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194871</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17566117"><span class="table__txt">+347.17566117</span></td>
+                  <td>00:23:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194718</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17553876"><span class="table__txt">+347.17553876</span></td>
+                  <td>23:34:29 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19192209</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17638936"><span class="table__txt">+347.17638936</span></td>
+                  <td>13:01:33 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19191398</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>09:36:46 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190364</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:38:00 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190020</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17659633"><span class="table__txt">+347.17659633</span></td>
+                  <td>04:06:09 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19189943</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:43:12 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19188852</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>23:20:45 29.04.2024</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Height</th>
+                  <th>Chain</th>
+                  <th>Amount</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>19233302</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>16:14:10 07.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19226505</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:42:33 06.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>4451634</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:47:32 05.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19217049</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>20:21:15 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19214851</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:17:23 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17540340"><span class="table__txt">+347.17540340</span></td>
+                  <td>13:57:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203815</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>13:34:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:36:12 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201622</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>04:25:58 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201519</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:59:27 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201210</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:47:39 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19199425</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>19:23:33 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19198466</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17644398"><span class="table__txt">+347.17644398</span></td>
+                  <td>15:09:11 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19197504</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>11:13:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19196362</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>06:25:41 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19195385</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:22:58 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194871</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17566117"><span class="table__txt">+347.17566117</span></td>
+                  <td>00:23:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194718</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17553876"><span class="table__txt">+347.17553876</span></td>
+                  <td>23:34:29 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19192209</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17638936"><span class="table__txt">+347.17638936</span></td>
+                  <td>13:01:33 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19191398</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>09:36:46 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190364</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:38:00 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190020</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17659633"><span class="table__txt">+347.17659633</span></td>
+                  <td>04:06:09 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19189943</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:43:12 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19188852</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>23:20:45 29.04.2024</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Height</th>
+                  <th>Chain</th>
+                  <th>Amount</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>19233302</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>16:14:10 07.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19226505</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:42:33 06.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>4451634</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:47:32 05.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19217049</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>20:21:15 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19214851</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:17:23 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17540340"><span class="table__txt">+347.17540340</span></td>
+                  <td>13:57:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203815</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>13:34:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:36:12 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201622</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>04:25:58 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201519</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:59:27 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201210</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:47:39 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19199425</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>19:23:33 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19198466</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17644398"><span class="table__txt">+347.17644398</span></td>
+                  <td>15:09:11 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19197504</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>11:13:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19196362</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>06:25:41 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19195385</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:22:58 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194871</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17566117"><span class="table__txt">+347.17566117</span></td>
+                  <td>00:23:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194718</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17553876"><span class="table__txt">+347.17553876</span></td>
+                  <td>23:34:29 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19192209</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17638936"><span class="table__txt">+347.17638936</span></td>
+                  <td>13:01:33 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19191398</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>09:36:46 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190364</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:38:00 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190020</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17659633"><span class="table__txt">+347.17659633</span></td>
+                  <td>04:06:09 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19189943</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:43:12 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19188852</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>23:20:45 29.04.2024</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Height</th>
+                  <th>Chain</th>
+                  <th>Amount</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>19233302</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>16:14:10 07.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19226505</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:42:33 06.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>4451634</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:47:32 05.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19217049</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>20:21:15 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19214851</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>11:17:23 04.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17540340"><span class="table__txt">+347.17540340</span></td>
+                  <td>13:57:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19203815</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>13:34:33 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201938</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:36:12 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201622</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>04:25:58 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201519</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:59:27 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19201210</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:47:39 02.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19199425</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>19:23:33 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19198466</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17644398"><span class="table__txt">+347.17644398</span></td>
+                  <td>15:09:11 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19197504</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>11:13:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19196362</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>06:25:41 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19195385</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>02:22:58 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194871</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17566117"><span class="table__txt">+347.17566117</span></td>
+                  <td>00:23:34 01.05.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19194718</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17553876"><span class="table__txt">+347.17553876</span></td>
+                  <td>23:34:29 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19192209</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17638936"><span class="table__txt">+347.17638936</span></td>
+                  <td>13:01:33 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19191398</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>09:36:46 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190364</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>05:38:00 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19190020</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17659633"><span class="table__txt">+347.17659633</span></td>
+                  <td>04:06:09 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19189943</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>03:43:12 30.04.2024</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>19188852</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+347.17525936"><span class="table__txt">+347.17525936</span></td>
+                  <td>23:20:45 29.04.2024</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Height</th>
+                  <th>Chain</th>
+                  <th>Amount</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>19233302</td>
+                  <td><img class="table__img" src="assets/img/chains/d.svg"><span class="table__txt">Name</span>
+                  </td>
+                  <td data-value="+8.00"><span class="table__txt">+8.00</span></td>
+                  <td>16:14:10 07.05.2024</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table__navigation navigation">
+                        <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">24</span><span> of </span><span id="tableOf">97</span><span>transactions</span></div>
+                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
+                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

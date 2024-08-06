@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>Hathor How to start mining</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/how-to-start-mining.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+          <nav class="header__mining-nav mining-nav"><a class="mining-nav__pool-logo pool-logo"><img class="mining-nav__img" src="assets/img/pools/hathor.svg" alt="blog img" title="blog img"><span class="mining-nav__txt">hathor pool</span></a>
+            <ul class="mining-nav__links">
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-miners.html"><img class="mining-nav__link-img" src="assets/img/header/nav/miners.svg" alt="Miners" title="Miners"><span class="mining-nav__link-txt">Miners</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-blocks.html"><img class="mining-nav__link-img" src="assets/img/header/nav/blocks.svg" alt="Blocks" title="Blocks"><span class="mining-nav__link-txt">Blocks</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-pool-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/stats.svg" alt="Pool statistics" title="Pool statistics"><span class="mining-nav__link-txt">Pool statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="hathor-network-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/network.svg" alt="Network statistics" title="Network statistics"><span class="mining-nav__link-txt">Network statistics</span></a>
+              </li>
+              <li class="mining-nav__item acitve-page"><a class="mining-nav__link" href="hathor-pool-how-to-start-mining.html"><img class="mining-nav__link-img" src="assets/img/header/nav/start.svg" alt="Getting started" title="Getting started"><span class="mining-nav__link-txt">Getting started</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__bg-container"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse">
+          </div>
+          <div class="info__container container">
+                      <div class="info__column column-center column">
+                        <div class="column__title index-title">How to start mining</div>
+                        <div class="column__txt column-centered-txt">Welcome to Hathor's pool home page. To start mining check getting started page.</div><a class="column__img-link" href="hathor-pool-how-to-start-mining.html"><img class="column__img" src="assets/img/get-started-dark.svg" id="get-started"></a>
+                      </div>
+          </div>
+        </section>
+        <section class="main__table table">
+          <div class="table__container container">
+            <div class="table__header">
+              <h2 class="table__title title">Choose a server for mining</h2>
+              <div class="table__clue clue"><img class="clue__img" src="assets/img/icons/info-circle.svg"><span class="clue__txt">Please specify several server, currently some may get down</span>
+              </div>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main" data-display="table">
+                <thead>
+                  <tr class="table__tr">
+                    <th></th>
+                    <th>EU (Germany)</th>
+                    <th>NA (CANADA)</th>
+                    <th>EU (Russia)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table__td">Stratum urls:</td>
+                    <td class="table__td">stratum+tcp://acc-pool.pw:8181/</td>
+                    <td class="table__td">ca.acc-pool.pw</td>
+                    <td class="table__td">us.acc-pool.pw</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="main__difficulty difficulty">
+          <div class="difficulty__container container">
+            <div class="difficulty__body section-body">
+              <div class="difficulty__block">
+                <h2 class="difficulty__title title">Default start difficulty:</h2>
+                <div class="difficulty__card card" onclick="copy(this)"><span class="card__txt">65536</span><img class="card__img copy-img" src="assets/img/icons/copy.svg">
+                </div>
+              </div>
+              <div class="difficulty__block">
+                <h2 class="difficulty__title title">Cgminer start difficulty:</h2>
+                <div class="difficulty__card card" onclick="copy(this)"><span class="card__txt">131072</span><img class="card__img copy-img" src="assets/img/icons/copy.svg">
+                </div>
+              </div>
+            </div><span class="difficulty__info">Pool have variable difficulty</span>
+          </div>
+        </section>
+        <section class="main__pools pools">
+          <div class="pools__container container">
+            <h2 class="pools__title title">NO Nicehash support</h2>
+          </div>
+        </section>
+        <section class="main__commands commands">
+          <div class="commands__container container section-body">
+            <div class="commands__header">
+              <h2 class="commands__title title">To make sure you will receive payout set the worker name as</h2>
+            </div>
+            <div class="commands__block"> 
+              <div class="commands__command command col" onclick="copy(this)">
+                <div class="command__title">HTR_address.Worker_name.DGB_address.BSV_address.BCH_address</div>
+                <div class="command__txt">Only old type addresses are supported! Not SegWitPassword can be any. For example x, but not blank</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__commands commands">
+          <div class="commands__container container section-body">
+            <div class="commands__header">
+              <h2 class="commands__title title">To start receive payouts in BTC</h2>
+            </div>
+            <div class="commands__body">
+              <div class="commands__block"> 
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">Add to your worker's password line like this:</div>
+                  <div class="command__txt">BTC_address:coins_to_exchange</div>
+                </div>
+                <div class="commands__command command inline" onclick="copy(this)">
+                  <div class="command__title">Min amount:</div>
+                  <div class="command__txt">0.005 BTC</div>
+                </div>
+                <div class="commands__command command inline" onclick="copy(this)">
+                  <div class="command__title small-txt">*(for each BTC address), payout time the same as for other coins</div>
+                </div>
+              </div>
+              <div class="commands__block"> 
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">Examples:</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN:ALL</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)"> 
+                  <div class="command__title">full BTC payout</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN:HTR</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)"> 
+                  <div class="command__title">only HTR converted</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN:notDGB</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">all converted, except DGB</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN:notBCH</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">all converted, except BCH</div>
+                </div>
+              </div>
+              <div class="commands__block"> 
+                <div class="commands__command command row" onclick="copy(this)">
+                  <div class="command__title">Possible flags:</div>
+                  <div class="command__txt">ALL, HTR, DGB, BSV, BCH, notHTR, notDGB, notBSV, notBCH</div>
+                </div>
+              </div>
+              <div class="commands__block"> 
+                <div class="commands__command command row" onclick="copy(this)">
+                  <div class="command__title">Note 1:</div>
+                  <div class="command__txt">no need to set additional addreses if some coins are converted, below example worker's name for passwords above</div>
+                </div>
+              </div>
+              <div class="commands__block"> 
+                <div class="commands__command command row" onclick="copy(this)">
+                  <div class="command__title">Note 2:</div>
+                  <div class="command__txt">for Whatsminer, put a period instead of a colon</div>
+                </div>
+              </div>
+              <div class="commands__block"> 
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">Examples:</div>
+                  <div class="command__txt">HHZtv23vYBBHUW8LnsKyfooSAXiyqLwHvT.S17Pro</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)"> 
+                  <div class="command__title">full BTC payout</div>
+                  <div class="command__txt">HHZtv23vYBBHUW8LnsKyfooSAXiyqLwHvT.S17Pro.DN3ArVp6HVzXzdgTwx82uajTdWGj7A81Y1.33EzXw4LjfQEJuDhQYXVnogBkQb4DpnvAD.33EzXw4LjfQEJuDhQYXVnogBkQb4DpnvAD</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)"> 
+                  <div class="command__title">only HTR converted</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN.S17Pro.DN3ArVp6HVzXzdgTwx82uajTdWGj7A81Y1</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">all converted, except DGB</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN.S17Pro.x.x.33EzXw4LjfQEJuDhQYXVnogBkQb4DpnvAD</div>
+                </div>
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">all converted, except BCH</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__commands commands">
+          <div class="commands__container container section-body col">
+            <div class="commands__header">
+              <h2 class="commands__title title">Note if you are using BTC payout capability and custom diff setup, add ? mark between them on worker's password, otherwise password will be ignored</h2>
+            </div>
+            <div class="commands__block"> 
+              <div class="commands__body notice"> 
+                <div class="commands__command command col" onclick="copy(this)">
+                  <div class="command__title">Examples:</div>
+                  <div class="command__txt">3Ha6TzVwkLvLBTjdj23vtMgWwyEUs3qiJN:ALL?d=65536</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__videos videos last-section">
+          <div class="videos__container container">
+            <h2 class="videos__title title">HiveOS and RaveOS :</h2>
+            <div class="videos__videos-block gallery">
+              <div class="videos__video video">
+                <div class="video__preview"><img class="video__img" src="assets/img/videos/config1.jpg"><img class="video__zoom-in" src="assets/img/videos/search-zoom-in-black.svg">
+                </div>
+              </div>
+              <div class="video__video video">
+                <div class="video__preview"><img class="video__img" src="assets/img/videos/config2.jpg"><img class="video__zoom-in" src="assets/img/videos/search-zoom-in-black.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

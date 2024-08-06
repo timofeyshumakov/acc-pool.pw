@@ -1,0 +1,3 @@
+.column:nth-child(2) .column__title {
+    font-size: 2rem;
+}

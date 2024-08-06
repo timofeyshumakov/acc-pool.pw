@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>Kaspa Pool Miners</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/miners.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+          <nav class="header__mining-nav mining-nav"><a class="mining-nav__pool-logo pool-logo"><img class="mining-nav__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="mining-nav__txt">kaspa pool</span></a>
+            <ul class="mining-nav__links">
+              <li class="mining-nav__item acitve-page"><a class="mining-nav__link" href="kaspa-pool-miners.html"><img class="mining-nav__link-img" src="assets/img/header/nav/miners.svg" alt="Miners" title="Miners"><span class="mining-nav__link-txt">Miners</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-blocks.html"><img class="mining-nav__link-img" src="assets/img/header/nav/blocks.svg" alt="Blocks" title="Blocks"><span class="mining-nav__link-txt">Blocks</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/stats.svg" alt="Pool statistics" title="Pool statistics"><span class="mining-nav__link-txt">Pool statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-network-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/network.svg" alt="Network statistics" title="Network statistics"><span class="mining-nav__link-txt">Network statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-how-to-start-mining.html"><img class="mining-nav__link-img" src="assets/img/header/nav/start.svg" alt="Getting started" title="Getting started"><span class="mining-nav__link-txt">Getting started</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__bg-container"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse">
+          </div>
+          <div class="info__container container">
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">0.3</div>
+                          <div class="column__txt">Blocks/Hour</div>
+                        </div><span class="column__line"></span>
+                        <div class="column__block">
+                          <div class="column__title">12 hours</div>
+                          <div class="column__txt">Payouts every</div>
+                        </div>
+                      </div>
+                      <div class="info__column column-center column">
+                        <div class="column__title index-title">Kaspa's pool miners</div>
+                        <div class="column__txt column-centered-txt">Welcome to Kaspa's pool home page. To start mining check getting started page.</div>
+                        <div class="column__title index-title">16.94 Th/s</div><a class="column__img-link" href="kaspa-pool-how-to-start-mining.html"><img class="column__img" src="assets/img/get-started-dark.svg" id="get-started"></a>
+                      </div>
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">168</div>
+                          <div class="column__txt">Miners</div>
+                        </div><span class="column__line"></span>
+                        <div class="column__block">
+                          <div class="column__title">99.98%</div>
+                          <div class="column__txt">Pool Luck</div>
+                        </div>
+                      </div>
+          </div>
+        </section>
+        <section class="main__table table">
+          <div class="table__container container">
+            <div class="table__header">
+              <h2 class="table__title">Miners</h2>
+              <div class="table__option">
+                <input class="table__option-txt" type="text" placeholder="Enter address">
+                <div class="table__option-dot"></div>
+              </div>
+            </div>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Address</th>
+                  <th>Workers</th>
+                  <th>Hashrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqf0ct7npf73je9x9tm9r66dlq3k7ddq4h3xg7tnhheq3vy5wpajuvuqmfggq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">1.27 Th/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qztmutyvnsy2stv6zrdcd4rzd7lxkdpghesuqz3jmm2vrjy34cgj7vvzprd0u</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">495.38 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzelfw5nxr8ltsfrdk4rysvkz5jxuxrmhv64nu8l3qp5d4q4da026vz96k2ht</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">397.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qptvnc2yksjvhd446sde73cl2vkpdv0l78wpckv46z560mwrswu4g679zyxez</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">216.73 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qpv7m4t86zn508zskjehyap6v3c2z3nzxvdx3ycef7dkmhp8cak7q7qs2h28t</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">215.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzf6k2mrnm9udp8xs007g92d3fv4vmxgz76vh7qmgxhz083r7l76sw7qgv0x2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">207.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzy4vq9t3s7as5wxgw7sf4khhnk99xa06dsxtelgd3ng95v5m0m9v7eja0xqq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">204.28 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qry2qxrewq33cnzdx4aurxx0vvttyn66gyydj2qvtf37x3svmu6gv760mglus</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">198.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrkmca5p8l3wr5tdl8p80greyk0pyksj90aggxf0xyz06kh2365c53s6kphz2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">161.42 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr0j9zz29dsk33z60fnkpmvlqy6pvwqhzll7wzpgyd70mkkepx7l5hsmkdkyg</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">159.47 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq8n5929g5p5fqn7l7d6mtlrqzts6kqntv2mmehts20c5uzdhhafqxv033fhs</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">157.63 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr6uygpgt457r4dsyhfreqah4jvlalq2qgm4lj8x8jeww0094acf78v2k5fxn</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">154.32 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrsxl4ltxv6tnmc0qqdxte8dutzug20nm3kafp484de9xkyfhefkvmztalpr8</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">142.07 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrrvnmz9lca7rsz76lvt52ppfef0jh88jzvnpekre8n3y9nhvh4lkuk70ttv6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">111.22 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qp6t8qqt8ehx9p6vvnv9tmyuh8rj5d8rzpkea999jkxk94uu0nuzzspzan67h</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">103.16 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qz8nqh0mkte4ng8sy69k3wcy2vfsre4wts23ahw7m7ds7lsv6la9xsf673v7v</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">102.57 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr95567c3sulvm9f3j5sxlna9ev6qt3eqa7n8hqe0qhtat7mrpu4vw6y6pv02</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">98.45 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrgtflfwxajh27mh493xhwlg7q0nltg2h7nkfpgfar4yfn3f4g3h7zj9nldq5</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">95.51 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrwwdukupz75p0nqsf2k6sx4uf9xyj37javn6ll6u9l5lfc3ys80wxs9jsc2w</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">84.14 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqjpdnrylw3p8nm0xkpjfj7f56jssgv23c5dsc0ujal085hlsc5t56uqzqxc6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">53.26 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzp5rfuynt706ugjpfj0cstwj034l32cmgl2z72qvxzchcsfswhes5qllk097</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">22.44 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqcgec08tupmrrca9t30ta859tv98j475qqxwd24g0rkknaksveqjgnca7uet</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">10</td>
+                  <td class="table__td">20.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzn26zynqhsq0v4yvg60pzfjud8ttwqrdkjpeqfrcjyjp36xuj6nq74zc5kyt</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">9.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq2c8fmmd90lrcm5d6m39nwrcewdkh9gpwcavnufz8t24lgguy6zjekpdwy3g</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">8.41 Gh/s</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Address</th>
+                  <th>Workers</th>
+                  <th>Hashrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqf0ct7npf73je9x9tm9r66dlq3k7ddq4h3xg7tnhheq3vy5wpajuvuqmfggq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">1.27 Th/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qztmutyvnsy2stv6zrdcd4rzd7lxkdpghesuqz3jmm2vrjy34cgj7vvzprd0u</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">495.38 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzelfw5nxr8ltsfrdk4rysvkz5jxuxrmhv64nu8l3qp5d4q4da026vz96k2ht</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">397.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qptvnc2yksjvhd446sde73cl2vkpdv0l78wpckv46z560mwrswu4g679zyxez</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">216.73 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qpv7m4t86zn508zskjehyap6v3c2z3nzxvdx3ycef7dkmhp8cak7q7qs2h28t</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">215.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzf6k2mrnm9udp8xs007g92d3fv4vmxgz76vh7qmgxhz083r7l76sw7qgv0x2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">207.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzy4vq9t3s7as5wxgw7sf4khhnk99xa06dsxtelgd3ng95v5m0m9v7eja0xqq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">204.28 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qry2qxrewq33cnzdx4aurxx0vvttyn66gyydj2qvtf37x3svmu6gv760mglus</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">198.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrkmca5p8l3wr5tdl8p80greyk0pyksj90aggxf0xyz06kh2365c53s6kphz2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">161.42 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr0j9zz29dsk33z60fnkpmvlqy6pvwqhzll7wzpgyd70mkkepx7l5hsmkdkyg</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">159.47 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq8n5929g5p5fqn7l7d6mtlrqzts6kqntv2mmehts20c5uzdhhafqxv033fhs</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">157.63 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr6uygpgt457r4dsyhfreqah4jvlalq2qgm4lj8x8jeww0094acf78v2k5fxn</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">154.32 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrsxl4ltxv6tnmc0qqdxte8dutzug20nm3kafp484de9xkyfhefkvmztalpr8</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">142.07 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrrvnmz9lca7rsz76lvt52ppfef0jh88jzvnpekre8n3y9nhvh4lkuk70ttv6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">111.22 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qp6t8qqt8ehx9p6vvnv9tmyuh8rj5d8rzpkea999jkxk94uu0nuzzspzan67h</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">103.16 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qz8nqh0mkte4ng8sy69k3wcy2vfsre4wts23ahw7m7ds7lsv6la9xsf673v7v</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">102.57 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr95567c3sulvm9f3j5sxlna9ev6qt3eqa7n8hqe0qhtat7mrpu4vw6y6pv02</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">98.45 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrgtflfwxajh27mh493xhwlg7q0nltg2h7nkfpgfar4yfn3f4g3h7zj9nldq5</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">95.51 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrwwdukupz75p0nqsf2k6sx4uf9xyj37javn6ll6u9l5lfc3ys80wxs9jsc2w</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">84.14 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqjpdnrylw3p8nm0xkpjfj7f56jssgv23c5dsc0ujal085hlsc5t56uqzqxc6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">53.26 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzp5rfuynt706ugjpfj0cstwj034l32cmgl2z72qvxzchcsfswhes5qllk097</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">22.44 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqcgec08tupmrrca9t30ta859tv98j475qqxwd24g0rkknaksveqjgnca7uet</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">10</td>
+                  <td class="table__td">20.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzn26zynqhsq0v4yvg60pzfjud8ttwqrdkjpeqfrcjyjp36xuj6nq74zc5kyt</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">9.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq2c8fmmd90lrcm5d6m39nwrcewdkh9gpwcavnufz8t24lgguy6zjekpdwy3g</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">8.41 Gh/s</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Address</th>
+                  <th>Workers</th>
+                  <th>Hashrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqf0ct7npf73je9x9tm9r66dlq3k7ddq4h3xg7tnhheq3vy5wpajuvuqmfggq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">1.27 Th/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qztmutyvnsy2stv6zrdcd4rzd7lxkdpghesuqz3jmm2vrjy34cgj7vvzprd0u</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">495.38 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzelfw5nxr8ltsfrdk4rysvkz5jxuxrmhv64nu8l3qp5d4q4da026vz96k2ht</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">397.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qptvnc2yksjvhd446sde73cl2vkpdv0l78wpckv46z560mwrswu4g679zyxez</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">216.73 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qpv7m4t86zn508zskjehyap6v3c2z3nzxvdx3ycef7dkmhp8cak7q7qs2h28t</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">215.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzf6k2mrnm9udp8xs007g92d3fv4vmxgz76vh7qmgxhz083r7l76sw7qgv0x2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">207.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzy4vq9t3s7as5wxgw7sf4khhnk99xa06dsxtelgd3ng95v5m0m9v7eja0xqq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">204.28 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qry2qxrewq33cnzdx4aurxx0vvttyn66gyydj2qvtf37x3svmu6gv760mglus</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">198.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrkmca5p8l3wr5tdl8p80greyk0pyksj90aggxf0xyz06kh2365c53s6kphz2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">161.42 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr0j9zz29dsk33z60fnkpmvlqy6pvwqhzll7wzpgyd70mkkepx7l5hsmkdkyg</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">159.47 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq8n5929g5p5fqn7l7d6mtlrqzts6kqntv2mmehts20c5uzdhhafqxv033fhs</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">157.63 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr6uygpgt457r4dsyhfreqah4jvlalq2qgm4lj8x8jeww0094acf78v2k5fxn</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">154.32 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrsxl4ltxv6tnmc0qqdxte8dutzug20nm3kafp484de9xkyfhefkvmztalpr8</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">142.07 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrrvnmz9lca7rsz76lvt52ppfef0jh88jzvnpekre8n3y9nhvh4lkuk70ttv6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">111.22 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qp6t8qqt8ehx9p6vvnv9tmyuh8rj5d8rzpkea999jkxk94uu0nuzzspzan67h</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">103.16 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qz8nqh0mkte4ng8sy69k3wcy2vfsre4wts23ahw7m7ds7lsv6la9xsf673v7v</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">102.57 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr95567c3sulvm9f3j5sxlna9ev6qt3eqa7n8hqe0qhtat7mrpu4vw6y6pv02</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">98.45 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrgtflfwxajh27mh493xhwlg7q0nltg2h7nkfpgfar4yfn3f4g3h7zj9nldq5</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">95.51 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrwwdukupz75p0nqsf2k6sx4uf9xyj37javn6ll6u9l5lfc3ys80wxs9jsc2w</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">84.14 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqjpdnrylw3p8nm0xkpjfj7f56jssgv23c5dsc0ujal085hlsc5t56uqzqxc6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">53.26 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzp5rfuynt706ugjpfj0cstwj034l32cmgl2z72qvxzchcsfswhes5qllk097</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">22.44 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqcgec08tupmrrca9t30ta859tv98j475qqxwd24g0rkknaksveqjgnca7uet</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">10</td>
+                  <td class="table__td">20.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzn26zynqhsq0v4yvg60pzfjud8ttwqrdkjpeqfrcjyjp36xuj6nq74zc5kyt</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">9.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq2c8fmmd90lrcm5d6m39nwrcewdkh9gpwcavnufz8t24lgguy6zjekpdwy3g</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">8.41 Gh/s</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Address</th>
+                  <th>Workers</th>
+                  <th>Hashrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqf0ct7npf73je9x9tm9r66dlq3k7ddq4h3xg7tnhheq3vy5wpajuvuqmfggq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">1.27 Th/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qztmutyvnsy2stv6zrdcd4rzd7lxkdpghesuqz3jmm2vrjy34cgj7vvzprd0u</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">495.38 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzelfw5nxr8ltsfrdk4rysvkz5jxuxrmhv64nu8l3qp5d4q4da026vz96k2ht</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">397.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qptvnc2yksjvhd446sde73cl2vkpdv0l78wpckv46z560mwrswu4g679zyxez</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">216.73 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qpv7m4t86zn508zskjehyap6v3c2z3nzxvdx3ycef7dkmhp8cak7q7qs2h28t</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">215.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzf6k2mrnm9udp8xs007g92d3fv4vmxgz76vh7qmgxhz083r7l76sw7qgv0x2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">207.5 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzy4vq9t3s7as5wxgw7sf4khhnk99xa06dsxtelgd3ng95v5m0m9v7eja0xqq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">204.28 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qry2qxrewq33cnzdx4aurxx0vvttyn66gyydj2qvtf37x3svmu6gv760mglus</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">198.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrkmca5p8l3wr5tdl8p80greyk0pyksj90aggxf0xyz06kh2365c53s6kphz2</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">161.42 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr0j9zz29dsk33z60fnkpmvlqy6pvwqhzll7wzpgyd70mkkepx7l5hsmkdkyg</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">159.47 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq8n5929g5p5fqn7l7d6mtlrqzts6kqntv2mmehts20c5uzdhhafqxv033fhs</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">157.63 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr6uygpgt457r4dsyhfreqah4jvlalq2qgm4lj8x8jeww0094acf78v2k5fxn</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">154.32 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrsxl4ltxv6tnmc0qqdxte8dutzug20nm3kafp484de9xkyfhefkvmztalpr8</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">142.07 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrrvnmz9lca7rsz76lvt52ppfef0jh88jzvnpekre8n3y9nhvh4lkuk70ttv6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">111.22 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qp6t8qqt8ehx9p6vvnv9tmyuh8rj5d8rzpkea999jkxk94uu0nuzzspzan67h</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">103.16 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qz8nqh0mkte4ng8sy69k3wcy2vfsre4wts23ahw7m7ds7lsv6la9xsf673v7v</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">102.57 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qr95567c3sulvm9f3j5sxlna9ev6qt3eqa7n8hqe0qhtat7mrpu4vw6y6pv02</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">98.45 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrgtflfwxajh27mh493xhwlg7q0nltg2h7nkfpgfar4yfn3f4g3h7zj9nldq5</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">95.51 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qrwwdukupz75p0nqsf2k6sx4uf9xyj37javn6ll6u9l5lfc3ys80wxs9jsc2w</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">84.14 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqjpdnrylw3p8nm0xkpjfj7f56jssgv23c5dsc0ujal085hlsc5t56uqzqxc6</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">53.26 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzp5rfuynt706ugjpfj0cstwj034l32cmgl2z72qvxzchcsfswhes5qllk097</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">2</td>
+                  <td class="table__td">22.44 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqcgec08tupmrrca9t30ta859tv98j475qqxwd24g0rkknaksveqjgnca7uet</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">10</td>
+                  <td class="table__td">20.08 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qzn26zynqhsq0v4yvg60pzfjud8ttwqrdkjpeqfrcjyjp36xuj6nq74zc5kyt</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">9.85 Gh/s</td>
+                </tr>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qq2c8fmmd90lrcm5d6m39nwrcewdkh9gpwcavnufz8t24lgguy6zjekpdwy3g</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">3</td>
+                  <td class="table__td">8.41 Gh/s</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table__table-main">
+              <thead>
+                <tr class="table__tr">
+                  <th>Address</th>
+                  <th>Workers</th>
+                  <th>Hashrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td class="table__td" onclick="copy(this)"><span class="table__txt">kaspa:qqf0ct7npf73je9x9tm9r66dlq3k7ddq4h3xg7tnhheq3vy5wpajuvuqmfggq</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  </td>
+                  <td class="table__td">1</td>
+                  <td class="table__td">1.27 Th/s</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table__navigation navigation">
+                        <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">24</span><span> of </span><span id="tableOf">97</span><span>miners</span></div>
+                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
+                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

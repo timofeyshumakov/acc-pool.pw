@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg">
+          <picture><source media="(max-width: 480px)" srcset="assets/img/news-bg-mobile.svg">
+<source media="(max-width: 768px)" srcset="assets/img/news-bg-small.svg">
+<img class="bg__img" src="assets/img/news-bg.svg" alt="Описание изображения">
+          </picture>
+        </div>
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__container container">
+                  <div class="info__column column">
+                    <div class="column__block">
+                      <div class="column__title-top">Home / Blog</div>
+                      <div class="column__title">FAQ</div>
+                      <div class="column__txt">Need something cleared up? Here are our  most frequently asked questions.</div>
+                    </div>
+                  </div>
+          </div>
+        </section>
+        <section class="main__questions questions">
+          <div class="questions__container container">
+            <details class="questions__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">Is there a free trial available?</summary>
+            </details>
+            <details class="question__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">Can I change my plan later?</summary>
+            </details>
+            <details class="question__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">What is your cancellation policy?</summary>
+            </details>
+            <details class="question__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">Can other info be added to an invoice?</summary>
+            </details>
+            <details class="question__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">How does billing work?</summary>
+            </details>
+            <details class="question__question question">
+              <div class="question__txt">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</div>
+              <summary class="question__info">How do I change my account email?</summary>
+            </details>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

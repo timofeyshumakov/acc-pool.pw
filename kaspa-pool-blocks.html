@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>Kaspa Pool blocks</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blocks.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bg-container">
+        <div class="bg-gradient"></div>
+      </div>
+      <header class="header" id="header">
+        <div class="header__container container">
+          <div class="header__top">
+                  <div class="header__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                    <div class="logo-txt">Acc Pool</div>
+                  </div>
+            <div class="header__main">
+              <nav class="header__menu menu">
+                <ul class="menu__list" id="headerContainer">
+                  <li class="menu__item details-item">
+                    <details class="pools">
+                      <summary class="pools__summary">Pools</summary><a class="pools__link" href="index-hathor.html">Hathor pool</a><a class="pools__link" href="index-kaspa.html">Kaspa Pool</a><a class="pools__link" href="index-nexa.html">Nexa pool</a><a class="pools__link" href="index-warthog.html">Warthog pool</a>
+                    </details>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="company-news.html">Blog</a></li>
+                  <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="menu__wallet">
+                  <input class="menu__wallet-txt" type="text" placeholder="Your wallet address">
+                  <div class="menu__wallet-button"></div>
+                </div>
+              </nav>
+              <div class="header__buttons">
+                <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
+                </button>
+                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                </button>
+              </div>
+              <button class="header__signup" id="signup">Sign up</button>
+            </div>
+            <button class="header__menu-burger menu-burger" onclick="showBurger();"><span class="menu-burger__line"></span><span class="menu-burger__line"></span><span class="menu-burger__line"></span></button>
+          </div>
+          <nav class="header__mining-nav mining-nav"><a class="mining-nav__pool-logo pool-logo"><img class="mining-nav__img" src="assets/img/pools/kaspa.svg" alt="blog img" title="blog img"><span class="mining-nav__txt">kaspa pool</span></a>
+            <ul class="mining-nav__links">
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-miners.html"><img class="mining-nav__link-img" src="assets/img/header/nav/miners.svg" alt="Miners" title="Miners"><span class="mining-nav__link-txt">Miners</span></a>
+              </li>
+              <li class="mining-nav__item acitve-page"><a class="mining-nav__link" href="kaspa-pool-blocks.html"><img class="mining-nav__link-img" src="assets/img/header/nav/blocks.svg" alt="Blocks" title="Blocks"><span class="mining-nav__link-txt">Blocks</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/stats.svg" alt="Pool statistics" title="Pool statistics"><span class="mining-nav__link-txt">Pool statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-network-statistics.html"><img class="mining-nav__link-img" src="assets/img/header/nav/network.svg" alt="Network statistics" title="Network statistics"><span class="mining-nav__link-txt">Network statistics</span></a>
+              </li>
+              <li class="mining-nav__item"><a class="mining-nav__link" href="kaspa-pool-how-to-start-mining.html"><img class="mining-nav__link-img" src="assets/img/header/nav/start.svg" alt="Getting started" title="Getting started"><span class="mining-nav__link-txt">Getting started</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__info info">
+          <div class="info__bg-container"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse"><img class="info__bg" src="assets/img/ellipse.svg" alt="ellipse" title="ellipse">
+          </div>
+          <div class="info__container container">
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">0.1</div>
+                          <div class="column__txt">Blocks/Hour</div>
+                        </div><span class="column__line"></span>
+                        <div class="column__block">
+                          <div class="column__title">12 hours</div>
+                          <div class="column__txt">Payouts every</div>
+                        </div>
+                      </div>
+                      <div class="info__column column-center column">
+                        <div class="column__title index-title">Kaspa's pool blocks</div>
+                        <div class="column__txt column-centered-txt">Welcome to Kaspa's pool home page. To start mining check getting started page.</div>
+                        <div class="column__title index-title">9.31 Th/s</div><a class="column__img-link" href="kaspa-pool-how-to-start-mining.html"><img class="column__img" src="assets/img/get-started-dark.svg" id="get-started"></a>
+                      </div>
+                      <div class="info__column column">
+                        <div class="column__block">
+                          <div class="column__title">101</div>
+                          <div class="column__txt">Miners</div>
+                        </div><span class="column__line"></span>
+                        <div class="column__block">
+                          <div class="column__title">99.98%</div>
+                          <div class="column__txt">Pool Luck</div>
+                        </div>
+                      </div>
+          </div>
+        </section>
+        <section class="main__table table">
+          <div class="table__container container">
+            <div class="table__header">
+              <h2 class="table__title">blocks</h2>
+              <div class="table__option-container"><span class="table__option-txt">Sort by:</span>
+                <select class="table__option">
+                  <option class="table__option-txt">Confirmed</option>
+                  <option class="table__option-txt">Difficulty</option>
+                  <option class="table__option-txt">Workers</option>
+                </select>
+              </div>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th class="table-main__cell">Workers</th>
+                    <th class="table-main__cell grow">Blockhash</th>
+                    <th class="table-main__cell confirmations">Confirmations</th>
+                    <th class="table-main__cell difficulty">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78800307</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">38831</td>
+                    <td class="table-main__cell difficulty-value">56530500</td>
+                    <td class="table-main__cell time">00:09:52 08-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78765274</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">73864</td>
+                    <td class="table-main__cell difficulty-value">54771500</td>
+                    <td class="table-main__cell time">14:26:33 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78732067</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">107071</td>
+                    <td class="table-main__cell difficulty-value">55143500</td>
+                    <td class="table-main__cell time">05:13:10 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78658824</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">180314</td>
+                    <td class="table-main__cell difficulty-value">53374000</td>
+                    <td class="table-main__cell time">08:53:19 06-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78503357</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">335781</td>
+                    <td class="table-main__cell difficulty-value">55751400</td>
+                    <td class="table-main__cell time">13:41:21 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78495393</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">343745</td>
+                    <td class="table-main__cell difficulty-value">55619200</td>
+                    <td class="table-main__cell time">11:28:41 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78443807</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">395331</td>
+                    <td class="table-main__cell difficulty-value">54073500</td>
+                    <td class="table-main__cell time">21:09:49 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78438053</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">401085</td>
+                    <td class="table-main__cell difficulty-value">55574400</td>
+                    <td class="table-main__cell time">19:33:44 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78436813</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">402325</td>
+                    <td class="table-main__cell difficulty-value">55543400</td>
+                    <td class="table-main__cell time">19:12:55 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78376100</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">463038</td>
+                    <td class="table-main__cell difficulty-value">55360500</td>
+                    <td class="table-main__cell time">02:21:01 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78368304</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">470834</td>
+                    <td class="table-main__cell difficulty-value">55101900</td>
+                    <td class="table-main__cell time">00:11:34 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78348355</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">490783</td>
+                    <td class="table-main__cell difficulty-value">54314000</td>
+                    <td class="table-main__cell time">18:39:08 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78346114</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">493024</td>
+                    <td class="table-main__cell difficulty-value">54706600</td>
+                    <td class="table-main__cell time">18:01:41 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78343726</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">495412</td>
+                    <td class="table-main__cell difficulty-value">54168700</td>
+                    <td class="table-main__cell time">17:21:54 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78331231</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">507907</td>
+                    <td class="table-main__cell difficulty-value">54571100</td>
+                    <td class="table-main__cell time">13:53:53 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78327661</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">511477</td>
+                    <td class="table-main__cell difficulty-value">53851600</td>
+                    <td class="table-main__cell time">12:54:32 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78315696</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">523442</td>
+                    <td class="table-main__cell difficulty-value">54179300</td>
+                    <td class="table-main__cell time">09:34:51 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78222278</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">616860</td>
+                    <td class="table-main__cell difficulty-value">56065800</td>
+                    <td class="table-main__cell time">07:37:20 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78214177</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">624961</td>
+                    <td class="table-main__cell difficulty-value">52501100</td>
+                    <td class="table-main__cell time">05:24:26 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78197301</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">641837</td>
+                    <td class="table-main__cell difficulty-value">51151300</td>
+                    <td class="table-main__cell time">00:44:08 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78196149</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">642989</td>
+                    <td class="table-main__cell difficulty-value">52293100</td>
+                    <td class="table-main__cell time">00:24:55 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78166680</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">672458</td>
+                    <td class="table-main__cell difficulty-value">50620700</td>
+                    <td class="table-main__cell time">16:19:28 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78162119</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">677019</td>
+                    <td class="table-main__cell difficulty-value">53399200</td>
+                    <td class="table-main__cell time">15:02:46 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78128772</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">710366</td>
+                    <td class="table-main__cell difficulty-value">54437600</td>
+                    <td class="table-main__cell time">05:49:12 30-04-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th class="table-main__cell">Workers</th>
+                    <th class="table-main__cell grow">Blockhash</th>
+                    <th class="table-main__cell confirmations">Confirmations</th>
+                    <th class="table-main__cell difficulty">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78800307</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">38831</td>
+                    <td class="table-main__cell difficulty-value">56530500</td>
+                    <td class="table-main__cell time">00:09:52 08-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78765274</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">73864</td>
+                    <td class="table-main__cell difficulty-value">54771500</td>
+                    <td class="table-main__cell time">14:26:33 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78732067</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">107071</td>
+                    <td class="table-main__cell difficulty-value">55143500</td>
+                    <td class="table-main__cell time">05:13:10 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78658824</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">180314</td>
+                    <td class="table-main__cell difficulty-value">53374000</td>
+                    <td class="table-main__cell time">08:53:19 06-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78503357</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">335781</td>
+                    <td class="table-main__cell difficulty-value">55751400</td>
+                    <td class="table-main__cell time">13:41:21 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78495393</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">343745</td>
+                    <td class="table-main__cell difficulty-value">55619200</td>
+                    <td class="table-main__cell time">11:28:41 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78443807</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">395331</td>
+                    <td class="table-main__cell difficulty-value">54073500</td>
+                    <td class="table-main__cell time">21:09:49 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78438053</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">401085</td>
+                    <td class="table-main__cell difficulty-value">55574400</td>
+                    <td class="table-main__cell time">19:33:44 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78436813</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">402325</td>
+                    <td class="table-main__cell difficulty-value">55543400</td>
+                    <td class="table-main__cell time">19:12:55 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78376100</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">463038</td>
+                    <td class="table-main__cell difficulty-value">55360500</td>
+                    <td class="table-main__cell time">02:21:01 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78368304</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">470834</td>
+                    <td class="table-main__cell difficulty-value">55101900</td>
+                    <td class="table-main__cell time">00:11:34 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78348355</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">490783</td>
+                    <td class="table-main__cell difficulty-value">54314000</td>
+                    <td class="table-main__cell time">18:39:08 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78346114</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">493024</td>
+                    <td class="table-main__cell difficulty-value">54706600</td>
+                    <td class="table-main__cell time">18:01:41 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78343726</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">495412</td>
+                    <td class="table-main__cell difficulty-value">54168700</td>
+                    <td class="table-main__cell time">17:21:54 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78331231</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">507907</td>
+                    <td class="table-main__cell difficulty-value">54571100</td>
+                    <td class="table-main__cell time">13:53:53 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78327661</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">511477</td>
+                    <td class="table-main__cell difficulty-value">53851600</td>
+                    <td class="table-main__cell time">12:54:32 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78315696</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">523442</td>
+                    <td class="table-main__cell difficulty-value">54179300</td>
+                    <td class="table-main__cell time">09:34:51 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78222278</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">616860</td>
+                    <td class="table-main__cell difficulty-value">56065800</td>
+                    <td class="table-main__cell time">07:37:20 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78214177</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">624961</td>
+                    <td class="table-main__cell difficulty-value">52501100</td>
+                    <td class="table-main__cell time">05:24:26 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78197301</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">641837</td>
+                    <td class="table-main__cell difficulty-value">51151300</td>
+                    <td class="table-main__cell time">00:44:08 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78196149</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">642989</td>
+                    <td class="table-main__cell difficulty-value">52293100</td>
+                    <td class="table-main__cell time">00:24:55 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78166680</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">672458</td>
+                    <td class="table-main__cell difficulty-value">50620700</td>
+                    <td class="table-main__cell time">16:19:28 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78162119</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">677019</td>
+                    <td class="table-main__cell difficulty-value">53399200</td>
+                    <td class="table-main__cell time">15:02:46 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78128772</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">710366</td>
+                    <td class="table-main__cell difficulty-value">54437600</td>
+                    <td class="table-main__cell time">05:49:12 30-04-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th class="table-main__cell">Workers</th>
+                    <th class="table-main__cell grow">Blockhash</th>
+                    <th class="table-main__cell confirmations">Confirmations</th>
+                    <th class="table-main__cell difficulty">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78800307</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">38831</td>
+                    <td class="table-main__cell difficulty-value">56530500</td>
+                    <td class="table-main__cell time">00:09:52 08-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78765274</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">73864</td>
+                    <td class="table-main__cell difficulty-value">54771500</td>
+                    <td class="table-main__cell time">14:26:33 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78732067</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">107071</td>
+                    <td class="table-main__cell difficulty-value">55143500</td>
+                    <td class="table-main__cell time">05:13:10 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78658824</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">180314</td>
+                    <td class="table-main__cell difficulty-value">53374000</td>
+                    <td class="table-main__cell time">08:53:19 06-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78503357</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">335781</td>
+                    <td class="table-main__cell difficulty-value">55751400</td>
+                    <td class="table-main__cell time">13:41:21 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78495393</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">343745</td>
+                    <td class="table-main__cell difficulty-value">55619200</td>
+                    <td class="table-main__cell time">11:28:41 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78443807</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">395331</td>
+                    <td class="table-main__cell difficulty-value">54073500</td>
+                    <td class="table-main__cell time">21:09:49 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78438053</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">401085</td>
+                    <td class="table-main__cell difficulty-value">55574400</td>
+                    <td class="table-main__cell time">19:33:44 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78436813</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">402325</td>
+                    <td class="table-main__cell difficulty-value">55543400</td>
+                    <td class="table-main__cell time">19:12:55 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78376100</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">463038</td>
+                    <td class="table-main__cell difficulty-value">55360500</td>
+                    <td class="table-main__cell time">02:21:01 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78368304</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">470834</td>
+                    <td class="table-main__cell difficulty-value">55101900</td>
+                    <td class="table-main__cell time">00:11:34 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78348355</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">490783</td>
+                    <td class="table-main__cell difficulty-value">54314000</td>
+                    <td class="table-main__cell time">18:39:08 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78346114</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">493024</td>
+                    <td class="table-main__cell difficulty-value">54706600</td>
+                    <td class="table-main__cell time">18:01:41 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78343726</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">495412</td>
+                    <td class="table-main__cell difficulty-value">54168700</td>
+                    <td class="table-main__cell time">17:21:54 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78331231</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">507907</td>
+                    <td class="table-main__cell difficulty-value">54571100</td>
+                    <td class="table-main__cell time">13:53:53 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78327661</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">511477</td>
+                    <td class="table-main__cell difficulty-value">53851600</td>
+                    <td class="table-main__cell time">12:54:32 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78315696</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">523442</td>
+                    <td class="table-main__cell difficulty-value">54179300</td>
+                    <td class="table-main__cell time">09:34:51 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78222278</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">616860</td>
+                    <td class="table-main__cell difficulty-value">56065800</td>
+                    <td class="table-main__cell time">07:37:20 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78214177</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">624961</td>
+                    <td class="table-main__cell difficulty-value">52501100</td>
+                    <td class="table-main__cell time">05:24:26 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78197301</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">641837</td>
+                    <td class="table-main__cell difficulty-value">51151300</td>
+                    <td class="table-main__cell time">00:44:08 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78196149</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">642989</td>
+                    <td class="table-main__cell difficulty-value">52293100</td>
+                    <td class="table-main__cell time">00:24:55 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78166680</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">672458</td>
+                    <td class="table-main__cell difficulty-value">50620700</td>
+                    <td class="table-main__cell time">16:19:28 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78162119</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">677019</td>
+                    <td class="table-main__cell difficulty-value">53399200</td>
+                    <td class="table-main__cell time">15:02:46 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78128772</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">710366</td>
+                    <td class="table-main__cell difficulty-value">54437600</td>
+                    <td class="table-main__cell time">05:49:12 30-04-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th class="table-main__cell">Workers</th>
+                    <th class="table-main__cell grow">Blockhash</th>
+                    <th class="table-main__cell confirmations">Confirmations</th>
+                    <th class="table-main__cell difficulty">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78800307</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">38831</td>
+                    <td class="table-main__cell difficulty-value">56530500</td>
+                    <td class="table-main__cell time">00:09:52 08-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78765274</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">73864</td>
+                    <td class="table-main__cell difficulty-value">54771500</td>
+                    <td class="table-main__cell time">14:26:33 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78732067</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">107071</td>
+                    <td class="table-main__cell difficulty-value">55143500</td>
+                    <td class="table-main__cell time">05:13:10 07-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78658824</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">180314</td>
+                    <td class="table-main__cell difficulty-value">53374000</td>
+                    <td class="table-main__cell time">08:53:19 06-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78503357</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">335781</td>
+                    <td class="table-main__cell difficulty-value">55751400</td>
+                    <td class="table-main__cell time">13:41:21 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78495393</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">343745</td>
+                    <td class="table-main__cell difficulty-value">55619200</td>
+                    <td class="table-main__cell time">11:28:41 04-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78443807</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">395331</td>
+                    <td class="table-main__cell difficulty-value">54073500</td>
+                    <td class="table-main__cell time">21:09:49 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78438053</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">401085</td>
+                    <td class="table-main__cell difficulty-value">55574400</td>
+                    <td class="table-main__cell time">19:33:44 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78436813</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">402325</td>
+                    <td class="table-main__cell difficulty-value">55543400</td>
+                    <td class="table-main__cell time">19:12:55 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78376100</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">463038</td>
+                    <td class="table-main__cell difficulty-value">55360500</td>
+                    <td class="table-main__cell time">02:21:01 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78368304</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">470834</td>
+                    <td class="table-main__cell difficulty-value">55101900</td>
+                    <td class="table-main__cell time">00:11:34 03-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78348355</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">490783</td>
+                    <td class="table-main__cell difficulty-value">54314000</td>
+                    <td class="table-main__cell time">18:39:08 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78346114</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">493024</td>
+                    <td class="table-main__cell difficulty-value">54706600</td>
+                    <td class="table-main__cell time">18:01:41 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78343726</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">495412</td>
+                    <td class="table-main__cell difficulty-value">54168700</td>
+                    <td class="table-main__cell time">17:21:54 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78331231</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">507907</td>
+                    <td class="table-main__cell difficulty-value">54571100</td>
+                    <td class="table-main__cell time">13:53:53 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78327661</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">511477</td>
+                    <td class="table-main__cell difficulty-value">53851600</td>
+                    <td class="table-main__cell time">12:54:32 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78315696</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">523442</td>
+                    <td class="table-main__cell difficulty-value">54179300</td>
+                    <td class="table-main__cell time">09:34:51 02-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78222278</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">616860</td>
+                    <td class="table-main__cell difficulty-value">56065800</td>
+                    <td class="table-main__cell time">07:37:20 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78214177</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">624961</td>
+                    <td class="table-main__cell difficulty-value">52501100</td>
+                    <td class="table-main__cell time">05:24:26 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78197301</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">641837</td>
+                    <td class="table-main__cell difficulty-value">51151300</td>
+                    <td class="table-main__cell time">00:44:08 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78196149</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">642989</td>
+                    <td class="table-main__cell difficulty-value">52293100</td>
+                    <td class="table-main__cell time">00:24:55 01-05-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78166680</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">672458</td>
+                    <td class="table-main__cell difficulty-value">50620700</td>
+                    <td class="table-main__cell time">16:19:28 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78162119</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">677019</td>
+                    <td class="table-main__cell difficulty-value">53399200</td>
+                    <td class="table-main__cell time">15:02:46 30-04-2024</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78128772</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">710366</td>
+                    <td class="table-main__cell difficulty-value">54437600</td>
+                    <td class="table-main__cell time">05:49:12 30-04-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th class="table-main__cell">Workers</th>
+                    <th class="table-main__cell grow">Blockhash</th>
+                    <th class="table-main__cell confirmations">Confirmations</th>
+                    <th class="table-main__cell difficulty">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td class="table-main__cell">78800307</td>
+                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    </td>
+                    <td class="table-main__cell confirmations">38831</td>
+                    <td class="table-main__cell difficulty-value">56530500</td>
+                    <td class="table-main__cell time">00:09:52 08-05-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table__navigation navigation">
+                        <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">24</span><span> of </span><span id="tableOf">97</span><span>blocks</span></div>
+                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
+                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+                <div class="footer__logo logo"><img class="logo-img" src="assets/img/logo.svg" alt="logo" title="logo">
+                  <div class="logo-txt">Acc Pool</div>
+                </div>
+          <div class="footer__main">
+            <nav class="footer__footer-menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">Pools</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-hathor">Hathor pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-kaspa">Kaspa pool</a><span class="solo">Solo</span>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-nexa">Nexa pool</a><span class="solo">Solo</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="index-warthog">Warthog pool</a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><span class="footer-menu__link">About</span>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">API</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">About us</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="footer__form form" action="#" method="post">
+              <label class="form__txt" for="email">subscribe for the newsletter</label>
+              <div class="form__main">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Your e-mail here" required>
+                <button class="form__button" type="submit"><img class="form__button-img" src="assets/img/icons/arrow-white.svg">
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__copyright copyright">
+            <div class="copyright__txt">Сopyright © 2024 Acc Pool. All right reserved.</div><img class="copyright__social" src="assets/img/socials/telegram.svg">
+            <form action="#header"> 
+              <button class="copyright__to-top to-top" onclick="scrollToTop()"><span class="to-top__txt">Back to top</span><img class="to-top__img" src="assets/img/icons/arrow-white.svg">
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

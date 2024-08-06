@@ -1,0 +1,195 @@
+.column:nth-child(2) .column__title {
+    font-size: 4rem;
+    width: 100%;
+}
+
+.column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.column__line {
+    width: unset;
+    height: 4rem;
+    margin-left: auto;
+}
+
+.column:nth-child(3) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.table__hathor-earnings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+.light-theme .hathor-earning {
+    background: white;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    color: black;
+}
+
+.light-theme .info-card__option-container {
+    background: #f5f5f5;
+    color: black;
+}
+
+.light-theme .info-card__select {
+    color: black;
+}
+
+.light-theme .info-card__content-row::before {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .info-card__option {
+    background: #f5f5f5;
+}
+
+.light-theme .hathor-earning .info-card__content-row:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.light-theme .hathor-earning .info-card__select {
+    background-image: url(../img/icons/option-arrow-black.svg);
+}
+
+.info-card__option-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background: rgb(60, 60, 60);
+    color: white;
+}
+
+.info-card__select {
+    background: transparent;
+    background-size: 0.6rem 0.4rem;
+    background-image: url(../img/icons/option-arrow.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.2rem top 50%, 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color: white;
+}
+
+.info-card__option {
+    background: rgb(60, 60, 60);
+}
+
+.info-card__decor {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.decor-select {
+    background-image: none;
+}
+
+.hathor-card-content:not(:first-child) {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .column-center {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    .column:nth-child(2) .column__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .table__hathor-earnings {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .table__hathor-earnings {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        gap: 1rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .column:nth-child(3) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .column:nth-child(3) .column__line {
+        display: none;
+    }
+
+    .info__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: auto;
+        gap: 1rem;
+        width: 18rem;
+    }
+
+    .column__line {
+        height: unset;
+        width: 100%;
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+        margin-left: 0;
+        max-width: 20.5rem;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+
+    .column:nth-child(3), .column:nth-child(1) {
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+    }
+
+    .column-center {
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+    }
+}

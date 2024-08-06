@@ -1,0 +1,119 @@
+.column-center {
+    max-width: unset;
+}
+
+.table__table-main td:first-child {
+    width: 100%;
+    color: #415FFF;
+    display: inline;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-left: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 0;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.table__table-main td:nth-child(3), .table__table-main th:nth-child(3) {
+    width: 13.5rem;
+    min-width: 13.5rem;
+}
+
+.table__table-main td:nth-child(2), .table__table-main th:nth-child(2) {
+    width: 12.5rem;
+    min-width: 12.5rem;
+}
+
+.table__table-main th {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.table__table-main td {
+    margin: 0.72rem 0.5rem 0.72rem 0.5rem;
+}
+
+.table__tr {
+    width: 100%;
+}
+
+.table__table-main tr:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.table__table-main th:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.light-theme .table__table-main td:not(:first-child) {
+    color: #000000;
+}
+
+.table__option {
+    padding: 0.6rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .table__table-main td:first-child {
+        width: 10.5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .table__table-main th:not(:first-child) {
+        width: 9.5rem;
+    }
+
+    .table__table-main td:not(:first-child) {
+        width: 9.5rem;
+    }
+
+    .table__table-main th:first-child {
+        min-width: 10rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info__container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table__table-main td {
+        margin: 0.5rem 0.96rem 0.5rem 0;
+        padding-left: 0.5rem;
+    }
+
+    .table__table-main th {
+        margin: 0.5rem 0.96rem 0.5rem 0;
+        padding-left: 0.5rem;
+    }
+
+    .table__table-main td:not(:first-child) {
+        width: 6rem;
+    }
+
+    .table__table-main th:not(:first-child) {
+        width: 6rem;
+    }
+
+    .table__table-main td:first-child {
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+
+    .table__table-main th:first-child {
+        margin-left: 0;
+    }
+}

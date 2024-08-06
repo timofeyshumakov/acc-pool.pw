@@ -1,0 +1,29 @@
+.table__tr th, .table__tr td {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    min-width: 9.5rem;
+}
+
+th.time, td.time {
+    min-width: 11.5rem;
+}
+
+.table__table-main thead {
+    display: table-caption;
+}
+
+.table__table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table__table-main {
+    min-width: 77rem;
+}
+
+@media screen and (max-width: 767px) {
+    .table__table-main {
+        min-width: auto;
+    }
+}
