@@ -43,8 +43,12 @@
               <div class="header__buttons">
                 <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
                 </button>
-                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
-                </button>
+                <div class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                  <select class="header__button">
+                    <option class="header__lang-option" value="RU">RU</option>
+                    <option class="header__lang-option" value="EN">EN</option>
+                  </select>
+                </div>
               </div>
               <button class="header__signup" id="signup">Sign up</button>
             </div>
@@ -103,7 +107,7 @@
             <div class="table__header">
               <h2 class="table__title">blocks</h2>
               <div class="table__option-container"><span class="table__option-txt">Sort by:</span>
-                <select class="table__option">
+                <select class="table__option" id="sortTables">
                   <option class="table__option-txt">Confirmed</option>
                   <option class="table__option-txt">Difficulty</option>
                   <option class="table__option-txt">Workers</option>
@@ -123,7 +127,7 @@
                 <tbody>
                   <tr class="table__tr">
                     <td class="table-main__cell">78800307</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">38831</td>
                     <td class="table-main__cell difficulty-value">56530500</td>
@@ -131,7 +135,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78765274</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">73864</td>
                     <td class="table-main__cell difficulty-value">54771500</td>
@@ -139,7 +143,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78732067</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">107071</td>
                     <td class="table-main__cell difficulty-value">55143500</td>
@@ -147,7 +151,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78658824</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">180314</td>
                     <td class="table-main__cell difficulty-value">53374000</td>
@@ -155,7 +159,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78503357</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">335781</td>
                     <td class="table-main__cell difficulty-value">55751400</td>
@@ -163,7 +167,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78495393</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">343745</td>
                     <td class="table-main__cell difficulty-value">55619200</td>
@@ -171,7 +175,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78443807</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">395331</td>
                     <td class="table-main__cell difficulty-value">54073500</td>
@@ -179,7 +183,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78438053</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">401085</td>
                     <td class="table-main__cell difficulty-value">55574400</td>
@@ -187,7 +191,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78436813</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">402325</td>
                     <td class="table-main__cell difficulty-value">55543400</td>
@@ -195,7 +199,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78376100</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">463038</td>
                     <td class="table-main__cell difficulty-value">55360500</td>
@@ -203,7 +207,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78368304</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">470834</td>
                     <td class="table-main__cell difficulty-value">55101900</td>
@@ -211,7 +215,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78348355</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">490783</td>
                     <td class="table-main__cell difficulty-value">54314000</td>
@@ -219,7 +223,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78346114</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">493024</td>
                     <td class="table-main__cell difficulty-value">54706600</td>
@@ -227,7 +231,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78343726</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">495412</td>
                     <td class="table-main__cell difficulty-value">54168700</td>
@@ -235,7 +239,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78331231</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">507907</td>
                     <td class="table-main__cell difficulty-value">54571100</td>
@@ -243,7 +247,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78327661</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">511477</td>
                     <td class="table-main__cell difficulty-value">53851600</td>
@@ -251,7 +255,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78315696</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">523442</td>
                     <td class="table-main__cell difficulty-value">54179300</td>
@@ -259,7 +263,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78222278</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">616860</td>
                     <td class="table-main__cell difficulty-value">56065800</td>
@@ -267,7 +271,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78214177</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">624961</td>
                     <td class="table-main__cell difficulty-value">52501100</td>
@@ -275,7 +279,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78197301</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">641837</td>
                     <td class="table-main__cell difficulty-value">51151300</td>
@@ -283,7 +287,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78196149</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">642989</td>
                     <td class="table-main__cell difficulty-value">52293100</td>
@@ -291,7 +295,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78166680</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">672458</td>
                     <td class="table-main__cell difficulty-value">50620700</td>
@@ -299,7 +303,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78162119</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">677019</td>
                     <td class="table-main__cell difficulty-value">53399200</td>
@@ -307,7 +311,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78128772</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">710366</td>
                     <td class="table-main__cell difficulty-value">54437600</td>
@@ -329,7 +333,7 @@
                 <tbody>
                   <tr class="table__tr">
                     <td class="table-main__cell">78800307</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">38831</td>
                     <td class="table-main__cell difficulty-value">56530500</td>
@@ -337,7 +341,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78765274</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">73864</td>
                     <td class="table-main__cell difficulty-value">54771500</td>
@@ -345,7 +349,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78732067</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">107071</td>
                     <td class="table-main__cell difficulty-value">55143500</td>
@@ -353,7 +357,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78658824</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">180314</td>
                     <td class="table-main__cell difficulty-value">53374000</td>
@@ -361,7 +365,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78503357</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">335781</td>
                     <td class="table-main__cell difficulty-value">55751400</td>
@@ -369,7 +373,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78495393</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">343745</td>
                     <td class="table-main__cell difficulty-value">55619200</td>
@@ -377,7 +381,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78443807</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">395331</td>
                     <td class="table-main__cell difficulty-value">54073500</td>
@@ -385,7 +389,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78438053</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">401085</td>
                     <td class="table-main__cell difficulty-value">55574400</td>
@@ -393,7 +397,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78436813</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">402325</td>
                     <td class="table-main__cell difficulty-value">55543400</td>
@@ -401,7 +405,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78376100</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">463038</td>
                     <td class="table-main__cell difficulty-value">55360500</td>
@@ -409,7 +413,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78368304</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">470834</td>
                     <td class="table-main__cell difficulty-value">55101900</td>
@@ -417,7 +421,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78348355</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">490783</td>
                     <td class="table-main__cell difficulty-value">54314000</td>
@@ -425,7 +429,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78346114</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">493024</td>
                     <td class="table-main__cell difficulty-value">54706600</td>
@@ -433,7 +437,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78343726</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">495412</td>
                     <td class="table-main__cell difficulty-value">54168700</td>
@@ -441,7 +445,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78331231</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">507907</td>
                     <td class="table-main__cell difficulty-value">54571100</td>
@@ -449,7 +453,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78327661</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">511477</td>
                     <td class="table-main__cell difficulty-value">53851600</td>
@@ -457,7 +461,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78315696</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">523442</td>
                     <td class="table-main__cell difficulty-value">54179300</td>
@@ -465,7 +469,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78222278</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">616860</td>
                     <td class="table-main__cell difficulty-value">56065800</td>
@@ -473,7 +477,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78214177</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">624961</td>
                     <td class="table-main__cell difficulty-value">52501100</td>
@@ -481,7 +485,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78197301</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">641837</td>
                     <td class="table-main__cell difficulty-value">51151300</td>
@@ -489,7 +493,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78196149</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">642989</td>
                     <td class="table-main__cell difficulty-value">52293100</td>
@@ -497,7 +501,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78166680</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">672458</td>
                     <td class="table-main__cell difficulty-value">50620700</td>
@@ -505,7 +509,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78162119</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">677019</td>
                     <td class="table-main__cell difficulty-value">53399200</td>
@@ -513,7 +517,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78128772</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">710366</td>
                     <td class="table-main__cell difficulty-value">54437600</td>
@@ -535,7 +539,7 @@
                 <tbody>
                   <tr class="table__tr">
                     <td class="table-main__cell">78800307</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">38831</td>
                     <td class="table-main__cell difficulty-value">56530500</td>
@@ -543,7 +547,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78765274</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">73864</td>
                     <td class="table-main__cell difficulty-value">54771500</td>
@@ -551,7 +555,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78732067</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">107071</td>
                     <td class="table-main__cell difficulty-value">55143500</td>
@@ -559,7 +563,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78658824</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">180314</td>
                     <td class="table-main__cell difficulty-value">53374000</td>
@@ -567,7 +571,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78503357</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">335781</td>
                     <td class="table-main__cell difficulty-value">55751400</td>
@@ -575,7 +579,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78495393</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">343745</td>
                     <td class="table-main__cell difficulty-value">55619200</td>
@@ -583,7 +587,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78443807</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">395331</td>
                     <td class="table-main__cell difficulty-value">54073500</td>
@@ -591,7 +595,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78438053</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">401085</td>
                     <td class="table-main__cell difficulty-value">55574400</td>
@@ -599,7 +603,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78436813</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">402325</td>
                     <td class="table-main__cell difficulty-value">55543400</td>
@@ -607,7 +611,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78376100</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">463038</td>
                     <td class="table-main__cell difficulty-value">55360500</td>
@@ -615,7 +619,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78368304</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">470834</td>
                     <td class="table-main__cell difficulty-value">55101900</td>
@@ -623,7 +627,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78348355</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">490783</td>
                     <td class="table-main__cell difficulty-value">54314000</td>
@@ -631,7 +635,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78346114</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">493024</td>
                     <td class="table-main__cell difficulty-value">54706600</td>
@@ -639,7 +643,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78343726</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">495412</td>
                     <td class="table-main__cell difficulty-value">54168700</td>
@@ -647,7 +651,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78331231</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">507907</td>
                     <td class="table-main__cell difficulty-value">54571100</td>
@@ -655,7 +659,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78327661</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">511477</td>
                     <td class="table-main__cell difficulty-value">53851600</td>
@@ -663,7 +667,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78315696</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">523442</td>
                     <td class="table-main__cell difficulty-value">54179300</td>
@@ -671,7 +675,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78222278</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">616860</td>
                     <td class="table-main__cell difficulty-value">56065800</td>
@@ -679,7 +683,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78214177</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">624961</td>
                     <td class="table-main__cell difficulty-value">52501100</td>
@@ -687,7 +691,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78197301</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">641837</td>
                     <td class="table-main__cell difficulty-value">51151300</td>
@@ -695,7 +699,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78196149</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">642989</td>
                     <td class="table-main__cell difficulty-value">52293100</td>
@@ -703,7 +707,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78166680</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">672458</td>
                     <td class="table-main__cell difficulty-value">50620700</td>
@@ -711,7 +715,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78162119</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">677019</td>
                     <td class="table-main__cell difficulty-value">53399200</td>
@@ -719,7 +723,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78128772</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">710366</td>
                     <td class="table-main__cell difficulty-value">54437600</td>
@@ -741,7 +745,7 @@
                 <tbody>
                   <tr class="table__tr">
                     <td class="table-main__cell">78800307</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">38831</td>
                     <td class="table-main__cell difficulty-value">56530500</td>
@@ -749,7 +753,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78765274</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4">34425b64c624f58427bc07f98a719b13a20efb05fa23c353c407d72fa58cb5e4</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">73864</td>
                     <td class="table-main__cell difficulty-value">54771500</td>
@@ -757,7 +761,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78732067</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec">1e554d80b01a21941ed16bb16070919484b25235581729b30cc1ccf2263099ec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">107071</td>
                     <td class="table-main__cell difficulty-value">55143500</td>
@@ -765,7 +769,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78658824</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30">71ce182cc5178cec7bc5e945f5407d4309933c3bbbb342be65ac034c1c297e30</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">180314</td>
                     <td class="table-main__cell difficulty-value">53374000</td>
@@ -773,7 +777,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78503357</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9">64dc4864cfa10b0a75fb125dcfa9c999a92c1d488dcb828b140cd1fb6b5d9cb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">335781</td>
                     <td class="table-main__cell difficulty-value">55751400</td>
@@ -781,7 +785,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78495393</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c">b29c2c665fa870b5bd56da3cca28c61980fd0f497ece230d418b40e80e9fa25c</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">343745</td>
                     <td class="table-main__cell difficulty-value">55619200</td>
@@ -789,7 +793,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78443807</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629">b4345b0af07fa777b436be19f69ecccfd2da61e58e69977d20bb0b195a373629</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">395331</td>
                     <td class="table-main__cell difficulty-value">54073500</td>
@@ -797,7 +801,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78438053</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e">27f0c1ddcb327f5e672dc6ba2d1443b6cb0cb6d5ca4397e9ede81cf7d30dbf4e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">401085</td>
                     <td class="table-main__cell difficulty-value">55574400</td>
@@ -805,7 +809,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78436813</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91">6d62e70a0a055c936c5121dcb697f14fa6abb3a3201fc6c16b573d43c759aa91</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">402325</td>
                     <td class="table-main__cell difficulty-value">55543400</td>
@@ -813,7 +817,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78376100</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365">e41ca7ca9f7de4fcf165227fd5445f50719baeb08f2f96bff587b43e920fc365</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">463038</td>
                     <td class="table-main__cell difficulty-value">55360500</td>
@@ -821,7 +825,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78368304</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9">57f11a2c12fd8227a4ea0670ccb860e7d612890d231c9d078bc162038db99eb9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">470834</td>
                     <td class="table-main__cell difficulty-value">55101900</td>
@@ -829,7 +833,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78348355</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29">befbb7d07a3d1a66f261bcd11732b99aa48f38118a2ef93691997a3eb529af29</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">490783</td>
                     <td class="table-main__cell difficulty-value">54314000</td>
@@ -837,7 +841,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78346114</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743">d23db2cda43f021bb6c8c264bd9731d05bb4f7dfa18aca27dc8ba61fe72c4743</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">493024</td>
                     <td class="table-main__cell difficulty-value">54706600</td>
@@ -845,7 +849,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78343726</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec">5fb515035bffbe6683f686a1c35e7adb84ce376d98e902e3fb6f13946a5bbfec</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">495412</td>
                     <td class="table-main__cell difficulty-value">54168700</td>
@@ -853,7 +857,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78331231</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7">769bdc15441babbdb67f60f631b58e26fcc76d81420d0066dff3cb174e1ee1b7</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">507907</td>
                     <td class="table-main__cell difficulty-value">54571100</td>
@@ -861,7 +865,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78327661</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e">d36c1fad8bb1d63fb152d4f3ba27153be43dcadf2361389826381d9fb9fbe26e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">511477</td>
                     <td class="table-main__cell difficulty-value">53851600</td>
@@ -869,7 +873,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78315696</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65">a9c1bdb5478b8c3e3de4f1d404b36b4cc918224bc1af07411d895bda01c0dc65</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">523442</td>
                     <td class="table-main__cell difficulty-value">54179300</td>
@@ -877,7 +881,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78222278</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3">2269e03f7d271192cea3e5d2b596da78d610d513a26c233f0341fce4a7273ed3</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">616860</td>
                     <td class="table-main__cell difficulty-value">56065800</td>
@@ -885,7 +889,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78214177</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc">228941321fe658c8010f6215261f07c47782280e46dfbfa1f41ea0e1a3478dcc</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">624961</td>
                     <td class="table-main__cell difficulty-value">52501100</td>
@@ -893,7 +897,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78197301</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f">154628404832d06b4d446b294363d9b124bd9a7bcc1e42cb8ccebefb6d61676f</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">641837</td>
                     <td class="table-main__cell difficulty-value">51151300</td>
@@ -901,7 +905,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78196149</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9">ea073208c84e3a9063148e383c95cf471336c8228cc4c4075737559b7644dee9</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">642989</td>
                     <td class="table-main__cell difficulty-value">52293100</td>
@@ -909,7 +913,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78166680</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b">19d0c0c760527582ea075996b18fc4e80be504ac801b8c863ef58f9ee33af65b</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">672458</td>
                     <td class="table-main__cell difficulty-value">50620700</td>
@@ -917,7 +921,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78162119</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08">5bafc30e356d2f1299dbcbb7094f74efcb0556099d5d567b6f28e70e8ce14c08</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">677019</td>
                     <td class="table-main__cell difficulty-value">53399200</td>
@@ -925,7 +929,7 @@
                   </tr>
                   <tr class="table__tr">
                     <td class="table-main__cell">78128772</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963">5a78282f8756d8d404fa1560fb87f34a361895dbda90f050292268c5811b4963</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">710366</td>
                     <td class="table-main__cell difficulty-value">54437600</td>
@@ -947,7 +951,7 @@
                 <tbody>
                   <tr class="table__tr">
                     <td class="table-main__cell">78800307</td>
-                    <td class="table-main__cell grow blue row-copy" onclick="copy(this)"><span class="table__txt">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                    <td class="table-main__cell grow blue row-copy"><a class="table__txt" href="#873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e">873c49c5552cf80509c24a1567d181a2a2c80c6e8211cc0421b09914f301995e</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                     </td>
                     <td class="table-main__cell confirmations">38831</td>
                     <td class="table-main__cell difficulty-value">56530500</td>
@@ -958,8 +962,8 @@
             </div>
             <div class="table__navigation navigation">
                         <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">24</span><span> of </span><span id="tableOf">97</span><span>blocks</span></div>
-                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
-                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                          <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
                         </div>
             </div>
           </div>

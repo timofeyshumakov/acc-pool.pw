@@ -44,8 +44,12 @@
               <div class="header__buttons">
                 <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
                 </button>
-                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
-                </button>
+                <div class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                  <select class="header__button">
+                    <option class="header__lang-option" value="RU">RU</option>
+                    <option class="header__lang-option" value="EN">EN</option>
+                  </select>
+                </div>
               </div>
               <button class="header__signup" id="signup">Sign up</button>
             </div>
@@ -166,23 +170,25 @@
           <div class="table__container container">
             <div class="table__header">
                         <nav class="subpages-nav">
-                          <ul class="subpages-nav__list">
-                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><a class="subpages-nav__link" href="hathor-pool-miners-workers.html">Workers</a>
-                            </li>
-                            <li class="subpages-nav__item active-subpage"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><a class="subpages-nav__link" href="hathor-pool-miners-transactions-credit.html">Transactions</a>
-                            </li>
-                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-earnings.html">Earnings</a>
-                            </li>
-                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/hashrate.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-hashrate&amp;shares.html">Hashrate &amp; Shares</a>
-                            </li>
-                            <li class="subpages-nav__item"><img class="subpages-nav__img" src="assets/img/icons/settings.svg"><a class="subpages-nav__link" href="hathor-pool-miners-dollar-settings.html">Settings</a>
-                            </li>
-                          </ul>
+                          <div class="container">
+                            <ul class="subpages-nav__list">
+                              <li class="subpages-nav__item" data-bindsection="workers"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><span class="subpages-nav__link">Workers</span>
+                              </li>
+                              <li class="subpages-nav__item active-subpage" data-bindSection="transactions"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><span class="subpages-nav__link">Transactions</span>
+                              </li>
+                              <li class="subpages-nav__item" data-bindsection="earnings"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><span class="subpages-nav__link">Earnings</span>
+                              </li>
+                              <li class="subpages-nav__item" data-bindsection="hashrate"><img class="subpages-nav__img" src="assets/img/icons/hashrate.svg"><span class="subpages-nav__link">Hashrate &amp; Shares</span>
+                              </li>
+                              <li class="subpages-nav__item" data-bindsection="settings"><img class="subpages-nav__img" src="assets/img/icons/settings.svg"><span class="subpages-nav__link">Settings</span>
+                              </li>
+                            </ul>
+                          </div>
                         </nav>
             </div>
             <div class="table__header">
               <h2 class="table__title">transactions</h2>
-              <select class="table__option" id="subpagesSelect">
+              <select class="table__option" id="subpagesSelect" data-pool="hathor">
                 <option class="table__option-txt" value="Credit">Credit</option>
                 <option class="table__option-txt" value="Debit">Debit</option>
               </select>
@@ -928,8 +934,8 @@
             </table>
             <div class="table__navigation navigation">
                         <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">24</span><span> of </span><span id="tableOf">97</span><span>transactions</span></div>
-                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
-                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                          <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
                         </div>
             </div>
           </div>

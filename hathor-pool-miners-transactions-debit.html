@@ -8,10 +8,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
-    <title>Hathor pool Miners Workers</title>
+    <title>Hathor pool Miners Transactions Debit</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/workers.css">
+    <link rel="stylesheet" href="assets/css/hathor-transactions.css">
+    <link rel="stylesheet" href="assets/css/transactions-debit.css">
     <link rel="stylesheet" href="assets/css/hathor-miners-pages.css">
   </head>
   <body>
@@ -172,9 +173,9 @@
                         <nav class="subpages-nav">
                           <div class="container">
                             <ul class="subpages-nav__list">
-                              <li class="subpages-nav__item active-subpage" data-bindSection="workers"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><span class="subpages-nav__link">Workers</span>
+                              <li class="subpages-nav__item" data-bindsection="workers"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><span class="subpages-nav__link">Workers</span>
                               </li>
-                              <li class="subpages-nav__item" data-bindsection="transactions"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><span class="subpages-nav__link">Transactions</span>
+                              <li class="subpages-nav__item active-subpage" data-bindSection="transactions"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><span class="subpages-nav__link">Transactions</span>
                               </li>
                               <li class="subpages-nav__item" data-bindsection="earnings"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><span class="subpages-nav__link">Earnings</span>
                               </li>
@@ -187,72 +188,52 @@
                         </nav>
             </div>
             <div class="table__header">
-              <h2 class="table__title">workers</h2>
+              <h2 class="table__title">transactions</h2>
+              <select class="table__option" id="subpagesSelect" data-pool="hathor">
+                <option class="table__option-txt" value="Debit">Debit</option>
+                <option class="table__option-txt" value="Credit">Credit</option>
+              </select>
             </div>
-            <table class="table__table-main">
-              <thead>
-                <tr class="table__tr">
-                  <th>Worker</th>
-                  <th>1h</th>
-                  <th>3h</th>
-                  <th>6h</th>
-                  <th>12h</th>
-                  <th>24h</th>
-                  <th>Last seen</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table__tr">
-                  <td><span class="table__ellipse"></span><span class="table__txt">s21</span></td>
-                  <td>153.48 Th/s</td>
-                  <td>144.05 Th/s</td>
-                  <td>138.42 Th/s</td>
-                  <td>142.59 Th/s</td>
-                  <td>136.47 Th/s</td>
-                  <td>43 seconds(s) ago</td>
-                </tr>
-                <tr class="table__tr">
-                  <td><span class="table__ellipse"></span><span class="table__txt">M50xCT4x5x6x2</span></td>
-                  <td>114.17 Th/s</td>
-                  <td>117.88 Th/s</td>
-                  <td>115.04 Th/s</td>
-                  <td>116.95 Th/s</td>
-                  <td>114.17 Th/s</td>
-                  <td>46 seconds(s) ago</td>
-                </tr>
-                <tr class="table__tr">
-                  <td><span class="table__ellipse"></span><span class="table__txt">S19Prox110T</span></td>
-                  <td>94.52 Th/s</td>
-                  <td>100.89 Th/s</td>
-                  <td>102.52 Th/s</td>
-                  <td>106.84 Th/s</td>
-                  <td>103.3 Th/s</td>
-                  <td>2 minute(s) ago</td>
-                </tr>
-                <tr class="table__tr">
-                  <td><span class="table__ellipse"></span><span class="table__txt">m30sxct2x14x4x3</span></td>
-                  <td>82.1 Th/s</td>
-                  <td>76.41 Th/s</td>
-                  <td>75.5 Th/s</td>
-                  <td>75.47 Th/s</td>
-                  <td>73.04 Th/s</td>
-                  <td>52 seconds(s) ago</td>
-                </tr>
-              </tbody>
-              <tfoot class="table__total">
-                <tr>
-                  <td>Total</td>
-                  <td>5.91 Gh/s</td>
-                  <td>3.14 Gh/s</td>
-                  <td>1.96 Gh/s</td>
-                  <td>1.28 Gh/s</td>
-                  <td>892.27 Gh/s</td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+            <div class="table__table-container">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th>Height</th>
+                    <th>Amount</th>
+                    <th class="grow">TXid</th>
+                    <th class="time">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td><span class="table__txt">78800307</span></td>
+                    <td data-value="-86.01802684"><span class="table__txt">-86.01802684</span></td>
+                    <td class="blue grow">a47b169ac338855f32a68714e39574d8e774bc260d90d8d38cf666ac365766fa</td>
+                    <td class="time">2024-05-08 02:15:43</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td><span class="table__txt">78658824</span></td>
+                    <td data-value="-78.49778763"><span class="table__txt">-78.49778763</span></td>
+                    <td class="blue grow">01df38e83d853d9f55356b87eb4cc35749ba75dca618e53d1896d4bd123b84cd</td>
+                    <td class="time">2024-05-06 10:15:41</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td><span class="table__txt">78438053</span></td>
+                    <td data-value="-98.63545475"><span class="table__txt">-98.63545475</span></td>
+                    <td class="blue grow">1158c11eae75e8fb1ca85590cb0f3f1547b6045c0cfc914813a0efc8f70469a1</td>
+                    <td class="time">2024-05-03 21:15:34</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td><span class="table__txt">78368304</span></td>
+                    <td data-value="-67.07481418"><span class="table__txt">-67.07481418</span></td>
+                    <td class="blue grow">f58775e88373ff75a54754811d2bd03fb36b61adb46f893f0ada7dadec475584</td>
+                    <td class="time">2024-05-03 02:15:34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="table__navigation navigation">
-                        <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">4</span><span> of </span><span id="tableOf">4</span><span>workers</span></div>
+                        <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">4</span><span> of </span><span id="tableOf">4</span><span>transactions</span></div>
                         <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
                           <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
                         </div>

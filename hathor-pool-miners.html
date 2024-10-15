@@ -43,8 +43,12 @@
               <div class="header__buttons">
                 <button class="header__button" id="theme"><img class="header__button-img" src="assets/img/header/sun-white.svg">
                 </button>
-                <button class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
-                </button>
+                <div class="header__button" id="lang"><img class="header__button-img" src="assets/img/header/website-white.svg">
+                  <select class="header__button">
+                    <option class="header__lang-option" value="RU">RU</option>
+                    <option class="header__lang-option" value="EN">EN</option>
+                  </select>
+                </div>
               </div>
               <button class="header__signup" id="signup">Sign up</button>
             </div>
@@ -102,6 +106,10 @@
           <div class="table__container container">
             <div class="table__header">
               <h2 class="table__title">Miners</h2>
+              <div class="table__option">
+                <input class="table__option-txt" type="text" placeholder="Enter address">
+                <div class="table__option-dot"></div>
+              </div>
             </div>
             <table class="table__table-main">
               <thead>
@@ -113,7 +121,7 @@
               </thead>
               <tbody>
                 <tr class="table__tr">
-                  <td class="table__td" onclick="copy(this)"><span class="table__txt">dollar</span><img class="table__copy" src="assets/img/icons/document-copy.svg">
+                  <td class="table__td" onclick="copy(this)"><a class="table__txt" href="#nexa:nqtsq5g5t6r74x57zer4s3vdh9yaq8ms7ay9wkvvrmq8a3c8">nexa:nqtsq5g5t6r74x57zer4s3vdh9yaq8ms7ay9wkvvrmq8a3c8</a><img class="table__copy" src="assets/img/icons/document-copy.svg">
                   </td>
                   <td class="table__td">4</td>
                   <td class="table__td">436.93 Th/s</td>
@@ -122,8 +130,8 @@
             </table>
             <div class="table__navigation navigation">
                         <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">1</span><span> of </span><span id="tableOf">1</span><span>miners</span></div>
-                        <div class="navigation__pagination pagination"><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="back">
-                          <div class="pagination__numbers"></div><img class="pagination__img arrow" src="assets/img/icons/arrow-white.svg" id="forward">
+                        <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                          <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
                         </div>
             </div>
           </div>

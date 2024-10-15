@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
-    <title>Kaspa pool Miners Dollar Hashrate & Shares</title>
+    <title>kaspa pool menu</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/hashrate.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
   </head>
   <body>
     <div class="wrapper">
@@ -77,15 +77,15 @@
           <div class="info__container container">
                       <div class="info__column column">
                         <div class="column__block">
-                          <div class="column__title">1.31 Th/s</div>
+                          <div class="column__title">52.60 Gh/s</div>
                           <div class="column__txt">Hashrate</div>
                         </div><span class="column__line"></span>
                         <div class="column__block">
-                          <div class="column__title">98.69%</div>
+                          <div class="column__title">66.90%</div>
                           <div class="column__txt">Effort</div>
                         </div><span class="column__line"></span>
                         <div class="column__block">
-                          <div class="column__title">24.88%</div>
+                          <div class="column__title">3.59%</div>
                           <div class="column__txt">Participation</div>
                         </div>
                       </div>
@@ -94,49 +94,464 @@
                       </div>
                       <div class="info__column column">
                         <div class="column__block">
-                          <div class="column__title">0 KAS</div>
+                          <div class="column__title">5.36395388</div>
                           <div class="column__txt">Unconfirmed</div>
                         </div><span class="column__line"></span>
                         <div class="column__block">
-                          <div class="column__title">0 KAS</div>
+                          <div class="column__title">61.32972919</div>
                           <div class="column__txt">Balance</div>
                         </div><span class="column__line"></span>
                         <div class="column__block">
-                          <div class="column__title">330.22608341 KAS</div>
+                          <div class="column__title">61.32972919</div>
                           <div class="column__txt">Paid</div>
                         </div>
                       </div>
           </div>
         </section>
-        <section class="main__table table">
+                  <nav class="subpages-nav">
+                    <div class="container">
+                      <ul class="subpages-nav__list">
+                        <li class="subpages-nav__item active-subpage" data-bindSection="workers"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><span class="subpages-nav__link">Workers</span>
+                        </li>
+                        <li class="subpages-nav__item" data-bindsection="transactions"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><span class="subpages-nav__link">Transactions</span>
+                        </li>
+                        <li class="subpages-nav__item" data-bindsection="earnings"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><span class="subpages-nav__link">Earnings</span>
+                        </li>
+                        <li class="subpages-nav__item" data-bindsection="hashrate"><img class="subpages-nav__img" src="assets/img/icons/hashrate.svg"><span class="subpages-nav__link">Hashrate &amp; Shares</span>
+                        </li>
+                        <li class="subpages-nav__item" data-bindsection="settings"><img class="subpages-nav__img" src="assets/img/icons/settings.svg"><span class="subpages-nav__link">Settings</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+        <section class="main__table table workers">
           <div class="table__container container">
             <div class="table__header">
-                        <nav class="subpages-nav">
-                          <div class="container">
-                            <ul class="subpages-nav__list">
-                              <li class="subpages-nav__item" data-bindsection="workers"><img class="subpages-nav__img" src="assets/img/header/nav/miners.svg"><span class="subpages-nav__link">Workers</span>
-                              </li>
-                              <li class="subpages-nav__item" data-bindsection="transactions"><img class="subpages-nav__img" src="assets/img/icons/transactions.svg"><span class="subpages-nav__link">Transactions</span>
-                              </li>
-                              <li class="subpages-nav__item" data-bindsection="earnings"><img class="subpages-nav__img" src="assets/img/icons/earnings.svg"><span class="subpages-nav__link">Earnings</span>
-                              </li>
-                              <li class="subpages-nav__item active-subpage" data-bindSection="hashrate"><img class="subpages-nav__img" src="assets/img/icons/hashrate.svg"><span class="subpages-nav__link">Hashrate &amp; Shares</span>
-                              </li>
-                              <li class="subpages-nav__item" data-bindsection="settings"><img class="subpages-nav__img" src="assets/img/icons/settings.svg"><span class="subpages-nav__link">Settings</span>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
+              <h2 class="table__title">workers</h2>
             </div>
-            <div class="table__header">
-              <h2 class="table__title">Hashrate & Shares</h2>
+            <div class="table__tables-container workers-tables">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th>Worker</th>
+                    <th>1h</th>
+                    <th>3h</th>
+                    <th>6h</th>
+                    <th>12h</th>
+                    <th>24h</th>
+                    <th>Last seen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td> <span class="table__ellipse"></span><span class="table__txt">0x0</span></td>
+                    <td>5.91 Th/s</td>
+                    <td>3.14 Th/s</td>
+                    <td>1.96 Th/s</td>
+                    <td>1.28 Th/s</td>
+                    <td>892.27 Gh/s</td>
+                    <td>23 seconds(s) ago</td>
+                  </tr>
+                </tbody>
+                <tfoot class="table__total">
+                  <tr>
+                    <td>Total</td>
+                    <td>5.91 Gh/s</td>
+                    <td>3.14 Gh/s</td>
+                    <td>1.96 Gh/s</td>
+                    <td>1.28 Gh/s</td>
+                    <td>892.27 Gh/s</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="table__navigation navigation">
+                          <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">1</span><span> of </span><span id="tableOf">1</span><span>workers</span></div>
+                          <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                            <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
+                          </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="main__charts charts">
-          <div class="charts__container container hashrate-charts" id="charts" data-pool="nexa" data-pagename="network-statistics">
-            <div class="charts__chart line-chart" id="hashrate"></div>
-            <div class="charts__chart line-chart" id="shares"></div>
+        <section class="main__table table transactions">
+          <div class="table__container container">
+            <div class="table__header">
+              <h2 class="table__title">transactions</h2>
+              <select class="table__option" id="subpagesSelect" data-pool="kaspa">
+                <option class="table__option-txt" value="Credit">Credit</option>
+                <option class="table__option-txt" value="Debit">Debit</option>
+              </select>
+            </div>
+            <div class="table__tables-container credit-tables">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th>Height</th>
+                    <th>Amount</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78800307</span>
+                    </td>
+                    <td>31.02474717</td>
+                    <td>2024-05-08 01:09:52</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78765274</span>
+                    </td>
+                    <td>27.08035977</td>
+                    <td>2024-05-07 15:26:33</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78732067</span>
+                    </td>
+                    <td>27.91291990</td>
+                    <td>2024-05-07 06:13:10</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78658824</span>
+                    </td>
+                    <td>28.64508427</td>
+                    <td>2024-05-06 09:53:19</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt"> 78503357</span>
+                    </td>
+                    <td>13.02807934</td>
+                    <td>2024-05-04 14:41:21</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78495393</span>
+                    </td>
+                    <td>14.14077675</td>
+                    <td>2024-05-04 12:28:41</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78495393</span>
+                    </td>
+                    <td>22.68384727</td>
+                    <td>2024-05-03 22:09:49</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78436813</span>
+                    </td>
+                    <td>67.40566867</td>
+                    <td>2024-05-03 20:12:55</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78376100</span>
+                    </td>
+                    <td>31.22978608</td>
+                    <td>2024-05-03 03:21:01</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78368304</span>
+                    </td>
+                    <td>33.14642710</td>
+                    <td>2024-05-03 01:11:34</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78346114</span>
+                    </td>
+                    <td>19.64542767</td>
+                    <td>2024-05-02 19:01:41</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78343726</span>
+                    </td>
+                    <td>7.57469469</td>
+                    <td>2024-05-02 18:21:54</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">77828890</span>
+                    </td>
+                    <td>6.70826473</td>
+                    <td>2024-04-26 20:14:11</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="table__navigation navigation">
+                          <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">13</span><span> of </span><span id="tableOf">13</span><span>workers</span></div>
+                          <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                            <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
+                          </div>
+              </div>
+            </div>
+            <div class="table__tables-container debit-tables">
+              <div class="table__table-container">
+                <table class="table__table-main">
+                  <thead>
+                    <tr class="table__tr">
+                      <th>Height</th>
+                      <th>Amount</th>
+                      <th class="grow">TXid</th>
+                      <th class="time">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table__tr">
+                      <td><span class="table__txt">78800307</span></td>
+                      <td data-value="-86.01802684"><span class="table__txt">-86.01802684</span></td>
+                      <td class=" blue grow"><a class="table__txt" href="#a47b169ac338855f32a68714e39574d8e774bc260d90d8d38cf666ac365766fa">a47b169ac338855f32a68714e39574d8e774bc260d90d8d38cf666ac365766fa</a></td>
+                      <td class="time">2024-05-08 02:15:43</td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td><span class="table__txt">78658824</span></td>
+                      <td data-value="-78.49778763"><span class="table__txt">-78.49778763</span></td>
+                      <td class=" blue grow"><a class="table__txt" href="#01df38e83d853d9f55356b87eb4cc35749ba75dca618e53d1896d4bd123b84cd">01df38e83d853d9f55356b87eb4cc35749ba75dca618e53d1896d4bd123b84cd</a></td>
+                      <td class="time">2024-05-06 10:15:41</td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td><span class="table__txt">78438053</span></td>
+                      <td data-value="-98.63545475"><span class="table__txt">-98.63545475</span></td>
+                      <td class=" blue grow"><a class="table__txt" href="#1158c11eae75e8fb1ca85590cb0f3f1547b6045c0cfc914813a0efc8f70469a1">1158c11eae75e8fb1ca85590cb0f3f1547b6045c0cfc914813a0efc8f70469a1</a></td>
+                      <td class="time">2024-05-03 21:15:34</td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td><span class="table__txt">78368304</span></td>
+                      <td data-value="-67.07481418"><span class="table__txt">-67.07481418</span></td>
+                      <td class=" blue grow"><a class="table__txt" href="#f58775e88373ff75a54754811d2bd03fb36b61adb46f893f0ada7dadec475584">f58775e88373ff75a54754811d2bd03fb36b61adb46f893f0ada7dadec475584</a></td>
+                      <td class="time">2024-05-03 02:15:34</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table__navigation navigation">
+                          <div class="navigation__info"><span id="tableFrom">1</span><span> to </span><span id="tableTo">4</span><span> of </span><span id="tableOf">4</span><span>workers</span></div>
+                          <div class="navigation__pagination pagination"><img class="pagination__img back arrow" src="assets/img/icons/arrow-white.svg">
+                            <div class="pagination__numbers"></div><img class="pagination__img forward arrow" src="assets/img/icons/arrow-white.svg">
+                          </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__table table earnings">
+          <div class="table__container container">
+            <div class="table__header">
+              <h2 class="table__title">earnings</h2>
+            </div>
+            <table class="table__table-main earnings-table">
+              <thead>
+                <tr class="table__tr">
+                  <th>Period</th>
+                  <th>Kas</th>
+                  <th>BTC</th>
+                  <th>USD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tr">
+                  <td>Last 60 minutes</td>
+                  <td>0</td>
+                  <td>0.00000000</td>
+                  <td>0</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Last 12 hours</td>
+                  <td>31.02</td>
+                  <td>0.00005553</td>
+                  <td>3.48</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Last 24 hours</td>
+                  <td>58.11</td>
+                  <td>0.00010401</td>
+                  <td>6.51</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Today</td>
+                  <td>0</td>
+                  <td>0.00000000</td>
+                  <td>0</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Yesterday</td>
+                  <td>86.02</td>
+                  <td>0.00015397</td>
+                  <td>9.64</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Last 7 days</td>
+                  <td>323.52</td>
+                  <td>0.00057910</td>
+                  <td>36.27</td>
+                </tr>
+                <tr class="table__tr">
+                  <td>Last 30 days</td>
+                  <td>330.23</td>
+                  <td>0.00059110</td>
+                  <td>37.02</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table__tables-container credit-tables">
+              <table class="table__table-main">
+                <thead>
+                  <tr class="table__tr">
+                    <th>Height</th>
+                    <th>Amount</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78800307</span>
+                    </td>
+                    <td>31.02474717</td>
+                    <td>2024-05-08 01:09:52</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78765274</span>
+                    </td>
+                    <td>27.08035977</td>
+                    <td>2024-05-07 15:26:33</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78732067</span>
+                    </td>
+                    <td>27.91291990</td>
+                    <td>2024-05-07 06:13:10</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78658824</span>
+                    </td>
+                    <td>28.64508427</td>
+                    <td>2024-05-06 09:53:19</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt"> 78503357</span>
+                    </td>
+                    <td>13.02807934</td>
+                    <td>2024-05-04 14:41:21</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78495393</span>
+                    </td>
+                    <td>14.14077675</td>
+                    <td>2024-05-04 12:28:41</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78495393</span>
+                    </td>
+                    <td>22.68384727</td>
+                    <td>2024-05-03 22:09:49</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78436813</span>
+                    </td>
+                    <td>67.40566867</td>
+                    <td>2024-05-03 20:12:55</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78376100</span>
+                    </td>
+                    <td>31.22978608</td>
+                    <td>2024-05-03 03:21:01</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78368304</span>
+                    </td>
+                    <td>33.14642710</td>
+                    <td>2024-05-03 01:11:34</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78346114</span>
+                    </td>
+                    <td>19.64542767</td>
+                    <td>2024-05-02 19:01:41</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">78343726</span>
+                    </td>
+                    <td>7.57469469</td>
+                    <td>2024-05-02 18:21:54</td>
+                  </tr>
+                  <tr class="table__tr">
+                    <td> <img class="table__ellipse" src="assets/img/icons/transactions-ok.svg"><span class="table__txt">77828890</span>
+                    </td>
+                    <td>6.70826473</td>
+                    <td>2024-04-26 20:14:11</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="charts__container container" id="charts" data-pool="nexa" data-pagename="network-statistics">
+            <div class="charts__chart line-chart" id="earningsday"></div>
+            <div class="charts__chart line-chart" id="earningsmonth"></div>
+            <div class="charts__chart line-chart" id="earningshashday"></div>
+          </div>
+        </section>
+        <section class="main__charts charts hashrate">
+          <div class="table__container container">
+            <div class="charts__header">
+              <h2 class="table__title"> Hashrate & Shares</h2>
+            </div>
+            <div class="charts__container">
+              <div class="charts__chart line-chart" id="hashrate-network"></div>
+              <div class="charts__chart line-chart" id="shares"></div>
+            </div>
+          </div>
+        </section>
+        <section class="main__settings settings">
+          <div class="settings__container container">
+            <h2 class="table__title">SETTINGS</h2>
+            <div class="settings__body">
+              <div class="settings__setting setting">
+                <div class="setting__header">
+                  <div class="setting__title">Configure minimum payment</div>
+                  <div class="setting__txt">Configure minimum payment amount and enable or disable them (individual payments, otherwise by default twice a day automatically).</div>
+                </div>
+                <div class="setting__body">
+                  <div class="setting__row">
+                    <div class="setting__input-container"><span class="setting__input-txt">Min</span>
+                      <input class="setting__input input" type="text" value="1000">
+                    </div>
+                    <div class="setting__checkbox-container">
+                      <input class="setting__checkbox" type="checkbox" id="payment">
+                      <label for="payment">
+                        <div class="setting__circle" id="paymentCircle"></div><span class="setting__circle-bg" id="paymentCircleBg"></span>
+                      </label><span class="setting__label">Enable payments</span>
+                    </div>
+                  </div>
+                  <div class="setting__row">
+                    <div class="setting__input-container">
+                      <input class="setting__input input" type="text" placeholder="Enter any of your workers IPs">
+                    </div>
+                    <button class="setting__button">Update</button>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__setting setting">
+                <div class="setting__header">
+                  <div class="setting__title">Configure donation percent</div>
+                  <div class="setting__txt">Configure donation percent to Kaspa dev fund and enable or disable it.</div>
+                  <div class="setting__txt">Configure donation percent to Kaspa dev fund and enable or disable it.</div>
+                </div>
+                <div class="setting__body">
+                  <div class="setting__row">
+                    <div class="setting__input-container"><span class="setting__input-txt">Percent</span>
+                      <input class="setting__input input" type="text" value="0.5">
+                    </div>
+                    <div class="setting__checkbox-container">
+                      <input class="setting__checkbox" type="checkbox" id="percent">
+                      <label for="percent">
+                        <div class="setting__circle" id="percentCircle"></div><span class="setting__circle-bg" id="percentCircleBg"></span>
+                      </label><span class="setting__label">Enable payments</span>
+                    </div>
+                  </div>
+                  <div class="setting__row">
+                    <div class="setting__input-container">
+                      <input class="setting__input input" type="text" placeholder="Enter any of your workers IPs">
+                    </div>
+                    <button class="setting__button">Update</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -207,7 +622,228 @@
             timezoneOffset: -180
               }
         });
-      charts[i] = Highcharts.chart('hashrate', {
+      charts[i] = Highcharts.chart('earningsday', {
+        chart: {
+            zoomType: 'x',
+            style: {
+              borderWidth: '1.5rem',
+              borderColor: 'black',
+            }
+        },
+        title: {
+            text: 'Earnings last 24 hours',
+            align: 'left',
+            x: 0,
+            y: 20,
+            style: {
+              fontFamily: fontFamily,
+              fontSize: titleFontSize,
+            }
+        },
+        subtitle: {
+            align: 'left',
+            x: 0,
+            y: 45,
+            text: document.ontouchstart === undefined ?
+                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        xAxis: {
+            type: 'datetime',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        legend: {
+          layout: 'horizontal', // Горизонтальное расположение легенды
+          align: 'left', // Выравнивание по центру
+          verticalAlign: 'bottom', // Расположение внизу графика
+          borderWidth: 0 // Без рамки вокруг легенды
+        },
+        yAxis: [{
+                labels: {
+                    format: '{value} Sat',
+                },
+                title: {
+                    text: '',
+                },
+                gridLineColor: gridLineColor
+                }, {
+                title: {
+                    text: '',
+                },
+                labels: {
+                    format: '{value} USD',
+                },
+                opposite: true,
+                gridLineColor: gridLineColor
+            }],
+            smoothed: true,
+            gridLineColor: gridLineColor,
+            series: [{
+                type: 'area',
+                name: 'Sat',
+                yAxis: 0,
+                data: [[1719878401000, 135], [1719964801000, 130], [1720051201000, 85], [1720137601000, 86], [1720224001000, 106], [1720310401000, 41], [1720396801000, 80], [1720483201000, 113], [1720569601000, 121], [1720656001000, 27], [1720742401000, 47], [1720828801000, 105], [1720915201000, 70], [1721001601000, 63], [1721088001000, 63], [1721174401000, 98], [1721260801000, 113], [1721347201000, 96], [1721433601000, 64], [1721520001000, 41], [1721606401000, 146], [1721692801000, 66], [1721779201000, 54], [1721865601000, 31], [1721952001000, 74], [1722038401000, 42], [1722124801000, 52], [1722211201000, 42], [1722297601000, 125], [1722384001000, 72], [1722470401000, 97]]
+            },{
+                type: 'area',
+                name: 'USD',
+                yAxis: 1,
+                data: [[1719878401000, 0.08], [1719964801000, 0.08], [1720051201000, 0.05], [1720137601000, 0.05], [1720224001000, 0.06], [1720310401000, 0.02], [1720396801000, 0.04], [1720483201000, 0.07], [1720569601000, 0.07], [1720656001000, 0.02], [1720742401000, 0.03], [1720828801000, 0.06], [1720915201000, 0.04], [1721001601000, 0.04], [1721088001000, 0.04], [1721174401000, 0.06], [1721260801000, 0.07], [1721347201000, 0.06], [1721433601000, 0.04], [1721520001000, 0.03], [1721606401000, 0.1], [1721692801000, 0.04], [1721779201000, 0.04], [1721865601000, 0.02], [1721952001000, 0.05], [1722038401000, 0.03], [1722124801000, 0.04], [1722211201000, 0.03], [1722297601000, 0.08], [1722384001000, 0.05], [1722470401000, 0.06]]
+            }]
+      });
+      
+      i++;
+      charts[i] = Highcharts.chart('earningsmonth', {
+        chart: {
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Earnings last 30 days',
+            align: 'left',
+            x: 0,
+            y: 20,
+            style: {
+                fontFamily: fontFamily,
+                fontSize: titleFontSize,
+            }
+        },
+        subtitle: {
+            align: 'left',
+            x: 0,
+            y: 45,
+            text: document.ontouchstart === undefined ?
+                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        xAxis: {
+            type: 'datetime',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        legend: {
+          layout: 'horizontal', // Горизонтальное расположение легенды
+          align: 'left', // Выравнивание по центру
+          verticalAlign: 'bottom',
+          x: 0,
+          borderWidth: 0 // Без рамки вокруг легенды
+        },
+        yAxis: [{
+                labels: {
+                    format: '{value} Sat',
+                },
+                title: {
+                    text: '',
+                },
+                gridLineColor: gridLineColor
+                }, {
+                title: {
+                    text: '',
+                },
+                labels: {
+                    format: '{value} USD',
+                },
+                opposite: true,
+                gridLineColor: gridLineColor
+            }],
+            smoothed: true,
+            gridLineColor: gridLineColor,
+            series: [{
+                type: 'area',
+                name: 'Sat',
+                yAxis: 0,
+                data: [[1719878401000, 135], [1719964801000, 130], [1720051201000, 85], [1720137601000, 86], [1720224001000, 106], [1720310401000, 41], [1720396801000, 80], [1720483201000, 113], [1720569601000, 121], [1720656001000, 27], [1720742401000, 47], [1720828801000, 105], [1720915201000, 70], [1721001601000, 63], [1721088001000, 63], [1721174401000, 98], [1721260801000, 113], [1721347201000, 96], [1721433601000, 64], [1721520001000, 41], [1721606401000, 146], [1721692801000, 66], [1721779201000, 54], [1721865601000, 31], [1721952001000, 74], [1722038401000, 42], [1722124801000, 52], [1722211201000, 42], [1722297601000, 125], [1722384001000, 72], [1722470401000, 97]]
+            },{
+                type: 'area',
+                name: 'USD',
+                yAxis: 1,
+                data: [[1719878401000, 0.08], [1719964801000, 0.08], [1720051201000, 0.05], [1720137601000, 0.05], [1720224001000, 0.06], [1720310401000, 0.02], [1720396801000, 0.04], [1720483201000, 0.07], [1720569601000, 0.07], [1720656001000, 0.02], [1720742401000, 0.03], [1720828801000, 0.06], [1720915201000, 0.04], [1721001601000, 0.04], [1721088001000, 0.04], [1721174401000, 0.06], [1721260801000, 0.07], [1721347201000, 0.06], [1721433601000, 0.04], [1721520001000, 0.03], [1721606401000, 0.1], [1721692801000, 0.04], [1721779201000, 0.04], [1721865601000, 0.02], [1721952001000, 0.05], [1722038401000, 0.03], [1722124801000, 0.04], [1722211201000, 0.03], [1722297601000, 0.08], [1722384001000, 0.05], [1722470401000, 0.06]]
+            }]
+      });
+      
+      i++;
+      charts[i] = Highcharts.chart('earningshashday', {
+        chart: {
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Earnings Th/day',
+            align: 'left',
+            x: 0,
+            y: 20,
+            style: {
+                fontFamily: fontFamily,
+                fontSize: titleFontSize,
+            }
+        },
+        subtitle: {
+            align: 'left',
+            x: 0,
+            y: 45,
+            text: document.ontouchstart === undefined ?
+                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        xAxis: {
+            type: 'datetime',
+            style: {
+                fontFamily: fontFamily,
+                fontSize: textFontSize,
+            }
+        },
+        legend: {
+          layout: 'horizontal', // Горизонтальное расположение легенды
+          align: 'left', // Выравнивание по центру
+          verticalAlign: 'bottom', // Расположение внизу графика
+          borderWidth: 0 // Без рамки вокруг легенды
+        },
+        yAxis: [{
+                labels: {
+                    format: '{value} Sat',
+                },
+                title: {
+                    text: '',
+                },
+                gridLineColor: gridLineColor
+                }, {
+                title: {
+                    text: '',
+                },
+                labels: {
+                    format: '{value} USD',
+                },
+                opposite: true,
+                gridLineColor: gridLineColor
+            }],
+            smoothed: true,
+            gridLineColor: gridLineColor,
+            series: [{
+                type: 'area',
+                name: 'Sat',
+                yAxis: 0,
+                data: [[1719878401000, 135], [1719964801000, 130], [1720051201000, 85], [1720137601000, 86], [1720224001000, 106], [1720310401000, 41], [1720396801000, 80], [1720483201000, 113], [1720569601000, 121], [1720656001000, 27], [1720742401000, 47], [1720828801000, 105], [1720915201000, 70], [1721001601000, 63], [1721088001000, 63], [1721174401000, 98], [1721260801000, 113], [1721347201000, 96], [1721433601000, 64], [1721520001000, 41], [1721606401000, 146], [1721692801000, 66], [1721779201000, 54], [1721865601000, 31], [1721952001000, 74], [1722038401000, 42], [1722124801000, 52], [1722211201000, 42], [1722297601000, 125], [1722384001000, 72], [1722470401000, 97]]
+            },{
+                type: 'area',
+                name: 'USD',
+                yAxis: 1,
+                data: [[1719878401000, 0.08], [1719964801000, 0.08], [1720051201000, 0.05], [1720137601000, 0.05], [1720224001000, 0.06], [1720310401000, 0.02], [1720396801000, 0.04], [1720483201000, 0.07], [1720569601000, 0.07], [1720656001000, 0.02], [1720742401000, 0.03], [1720828801000, 0.06], [1720915201000, 0.04], [1721001601000, 0.04], [1721088001000, 0.04], [1721174401000, 0.06], [1721260801000, 0.07], [1721347201000, 0.06], [1721433601000, 0.04], [1721520001000, 0.03], [1721606401000, 0.1], [1721692801000, 0.04], [1721779201000, 0.04], [1721865601000, 0.02], [1721952001000, 0.05], [1722038401000, 0.03], [1722124801000, 0.04], [1722211201000, 0.03], [1722297601000, 0.08], [1722384001000, 0.05], [1722470401000, 0.06]]
+            }]
+      });
+      
+      i++;
+      charts[i] = Highcharts.chart('hashrate-network', {
         chart: {
             zoomType: 'x',
             backgroundColor: 'black',
