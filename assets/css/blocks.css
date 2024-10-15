@@ -58,8 +58,8 @@ td.confirmations, th.confirmations {
 }
 
 .table-main__cell.nexa-luck {
-    width: 11rem;
-    min-width: 11rem;
+    width: 11.5rem;
+    min-width: 11.5rem;
 }
 
 .table-main__cell.difficulty-value {
